@@ -1073,17 +1073,13 @@
         "uuid": "b434c9cc-dd7a-47fa-aec5-c167d9117099"
       }
     ],
-    "used_designators": "",
+    "used_designators": "LS1,U6,S1,C5-8,D4-7,#PWR1-11,#PWR118-119,#PWR124-126,R7-13,Q1-3",
     "variants": []
   },
   "sheets": [
     [
       "b434c9cc-dd7a-47fa-aec5-c167d9117099",
       "E155 Development Board"
-    ],
-    [
-      "96a9d49a-9c2f-4447-acd5-86f752910101",
-      "Speaker Amp"
     ]
   ],
   "text_variables": {},
