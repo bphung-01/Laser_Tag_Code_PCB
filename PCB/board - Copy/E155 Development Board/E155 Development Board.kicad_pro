@@ -582,8 +582,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": {},
-    "netclass_assignments": {},
+    "net_colors": null,
+    "netclass_assignments": null,
     "netclass_patterns": [
       {
         "netclass": "Power",
@@ -1073,7 +1073,7 @@
         "uuid": "b434c9cc-dd7a-47fa-aec5-c167d9117099"
       }
     ],
-    "used_designators": "LS1,U6,S1,C5-8,D4-7,#PWR1-11,#PWR118-119,#PWR124-126,R7-13,Q1-3",
+    "used_designators": "LS1,U6-9,S1,C5-8,D4-7,#PWR1-14,#PWR118-119,#PWR124-127,#PWR137-141,R7-13,Q1-3,SW1,SW6,J5-7",
     "variants": []
   },
   "sheets": [
