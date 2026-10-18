@@ -5991,6 +5991,16 @@
 		)
 		(uuid "0b776f27-9019-46bc-a117-2a74235f2d30")
 	)
+	(text "Flash"
+		(exclude_from_sim no)
+		(at 170.688 213.868 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "126475a3-5938-4814-bc97-dbbc2812d45e")
+	)
 	(text "Do we need more LED indicators?"
 		(exclude_from_sim no)
 		(at 195.326 171.704 0)
@@ -6132,6 +6142,16 @@
 		)
 		(uuid "9c84a493-60d2-4dc5-adf4-5bb43de34d23")
 	)
+	(text "IR Reciever"
+		(exclude_from_sim no)
+		(at 221.742 219.456 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a8450e9c-94a1-4deb-a300-a2a1b3cefcf7")
+	)
 	(text "Mounting Holes"
 		(exclude_from_sim no)
 		(at 169.672 22.352 0)
@@ -6151,6 +6171,16 @@
 			)
 		)
 		(uuid "b46130a1-dbd3-42a9-8dd5-3f541a9b6810")
+	)
+	(text "Trigger"
+		(exclude_from_sim no)
+		(at 192.532 213.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c3c14455-9700-4275-9143-7a84d9723f2d")
 	)
 	(text "Bridge Connector"
 		(exclude_from_sim no)
@@ -6183,6 +6213,16 @@
 			)
 		)
 		(uuid "e7cbde97-0ca5-4b2d-9f1d-fe465a9628cd")
+	)
+	(text "IR Led"
+		(exclude_from_sim no)
+		(at 116.332 207.772 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f1f07c65-7a16-4c0f-891f-5d9a3615b87b")
 	)
 	(junction
 		(at 89.535 35.56)
