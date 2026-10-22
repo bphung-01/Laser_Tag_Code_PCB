@@ -1,3 +1,27 @@
 # Ignore automatic history/backup folders
-.history/
-**/.history/
+.history
+**/.history
+
+# KiCad backups and autosave
+*-backups/
+_autosave-*
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+
+# KiCad lock files
+*.lck
+
+# KiCad per-user/cache files
+*.kicad_prl
+fp-info-cache
+*.kicad_sym-dcm
+*-cache.lib
+
+# KiCad generated output
+gerbers/
+*.gbr
+*.drl
+
+# SolidWorks temp/lock files
+~$*
