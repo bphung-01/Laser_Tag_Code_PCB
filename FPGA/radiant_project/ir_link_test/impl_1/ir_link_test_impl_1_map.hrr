@@ -3,10 +3,10 @@ Report for cell ir_link_test
    Instance path: ir_link_test
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOLGC	       1.00        100.0
-                                  LUT4	        111        100.0
-                               LUTGATE	         37        100.0
-                                LUTCCU	         74        100.0
-                                 IOREG	          1        100.0
-                                 IOBUF	          3        100.0
+                                 IOLGC	       2.00        100.0
+                                  LUT4	        108        100.0
+                               LUTGATE	         36        100.0
+                                LUTCCU	         72        100.0
+                                 IOREG	          2        100.0
+                                 IOBUF	          4        100.0
                                 PFUREG	         71        100.0

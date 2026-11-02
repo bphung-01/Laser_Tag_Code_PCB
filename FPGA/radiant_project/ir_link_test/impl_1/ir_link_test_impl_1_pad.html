@@ -48,15 +48,16 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Sun Nov  1 18:59:36 2026
+Sun Nov  1 19:31:37 2026
 
 Pinout by Port Name:
 +------------+----------+--------------+-------+------------------------------------------+
 | Port Name  | Pin/Bank | Buffer Type  | Site  | Properties                               |
 +------------+----------+--------------+-------+------------------------------------------+
 | detected_n | 42/0     | LVCMOS33_OUT | PR9A  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
-| ir_rx_n    | 19/1     | LVCMOS33_IN  | PL22B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| ir_rx_n    | 19/1     | LVCMOS33_IN  | PL22B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:NA    |
 | ir_tx      | 20/1     | LVCMOS33_OUT | PL20B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| trigger_n  | 34/0     | LVCMOS33_IN  | PR14B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
 +------------+----------+--------------+-------+------------------------------------------+
 
 Vccio by Bank:
@@ -95,7 +96,7 @@ Vccio by Bank:
 | 28/0     |     unused, PULL:UP |            |              | PR18A |                  |
 | 31/0     |     unused, PULL:UP |            |              | PR17B |                  |
 | 32/0     |     unused, PULL:UP |            |              | PR17A |                  |
-| 34/0     |     unused, PULL:UP |            |              | PR14B |                  |
+| 34/0     | trigger_n           | LOCATED    | LVCMOS33_IN  | PR14B |                  |
 | 35/0     |     unused, PULL:UP |            |              | PR13B | GPLL_IN/PCLKT0_1 |
 | 36/0     |     unused, PULL:UP |            |              | PR10B |                  |
 | 37/0     |     unused, PULL:UP |            |              | PR14A | PCLKT0_0         |
@@ -135,6 +136,7 @@ Locate Constraints for each Pin:
 ldc_set_location -site {42} [ get_ports {detected_n} ]
 ldc_set_location -site {19} [ get_ports {ir_rx_n} ]
 ldc_set_location -site {20} [ get_ports {ir_tx} ]
+ldc_set_location -site {34} [ get_ports {trigger_n} ]
 
 
 
@@ -142,7 +144,7 @@ ldc_set_location -site {20} [ get_ports {ir_tx} ]
 
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
-Sun Nov  1 18:59:36 2026
+Sun Nov  1 19:31:37 2026
 
 
 

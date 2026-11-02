@@ -856,14 +856,19 @@
             <Dynamic>light_timer_i7</Dynamic>
         </Message>
         <Message>
-            <ID>35002062</ID>
-            <Severity>16</Severity>
-            <Dynamic>ir_tx</Dynamic>
+            <ID>35002061</ID>
+            <Severity>1</Severity>
+            <Dynamic>trigger_n</Dynamic>
         </Message>
         <Message>
             <ID>35002061</ID>
             <Severity>1</Severity>
             <Dynamic>ir_rx_n</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002062</ID>
+            <Severity>16</Severity>
+            <Dynamic>ir_tx</Dynamic>
         </Message>
         <Message>
             <ID>35002062</ID>

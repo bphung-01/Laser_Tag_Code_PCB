@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Nov  1 18:59:21 2026
+Sun Nov  1 19:25:35 2026
 
 
 Command Line:  C:\lscc\radiant\2026.1\ispfpga\bin\nt64\synthesis.exe -f C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test/impl_1/ir_link_test_impl_1_lattice.synproj -logfile ir_link_test_impl_1_lattice.srp -gui -msgset C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test/promote.xml 
@@ -207,8 +207,9 @@ WARNING <35001779> - synthesis: Initial value found on instance light_timer_i11 
 WARNING <35001779> - synthesis: Initial value found on instance light_timer_i10 will be ignored.
 WARNING <35001779> - synthesis: Initial value found on instance light_timer_i8 will be ignored.
 WARNING <35001779> - synthesis: Initial value found on instance light_timer_i7 will be ignored.
-WARNING <35002062> - synthesis: Port rejected for I/O register mapping: ir_tx
+INFO <35002061> - synthesis: Port accepted for I/O register mapping: trigger_n
 INFO <35002061> - synthesis: Port accepted for I/O register mapping: ir_rx_n
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: ir_tx
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: detected_n
 INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
@@ -217,12 +218,12 @@ INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for Thunde
 
 ################### Begin Area Report (ir_link_test)######################
 Number of register bits => 71 of 5280 (1 % )
-CCU2 => 37
+CCU2 => 36
 FD1P3XZ => 71
 HSOSC_CORE => 1
-IB => 1
-IOL_B => 1
-LUT4 => 35
+IB => 2
+IOL_B => 2
+LUT4 => 32
 OB => 2
 ################### End Area Report ##################
 Number of odd-length carry chains : 3
@@ -239,16 +240,16 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n563, loads : 29
-  Net : n530, loads : 28
-  Net : n508, loads : 23
-  Net : n531, loads : 21
-  Net : n529, loads : 15
-  Net : ir_tx_c, loads : 14
-  Net : n122[21], loads : 13
+  Net : n653, loads : 29
+  Net : n587, loads : 26
+  Net : n562, loads : 26
+  Net : n564, loads : 23
+  Net : n393, loads : 22
+  Net : n585, loads : 15
+  Net : n844, loads : 13
   Net : n122[22], loads : 13
-  Net : n71[21], loads : 13
-  Net : n969, loads : 13
+  Net : n122[21], loads : 13
+  Net : n876, loads : 12
 ################### End Clock Report ##################
 
 
@@ -266,7 +267,7 @@ Peak Memory Usage: 91 MB
 Total CPU Time: 0 secs 
 Total REAL Time: 3 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: c0d4576d35fd3f60b160139115d8fe81decaceff
+Checksum -- synthesis -- netlist: dc0a01611b9f1cca8ae0a23fc655d2d3d2fce1e8
 
 
 

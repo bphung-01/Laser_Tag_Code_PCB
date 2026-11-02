@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2026.1.0.37.0
-Mapped on: Sun Nov  1 18:59:29 2026
+Mapped on: Sun Nov  1 19:31:28 2026
 
 Design Information
 ------------------
@@ -23,20 +23,20 @@ Design Summary
 --------------
 
    Number of slice registers:  71 out of  5280 (1%)
-   Number of I/O registers:      1 out of   117 (1%)
-   Number of LUT4s:           111 out of  5280 (2%)
-      Number of logic LUT4s:              36
-      Number of inserted feedthru LUT4s:   1
-      Number of ripple logic:             37 (74 LUT4s)
-   Number of IO sites used:   3 out of 39 (8%)
-      Number of IO sites used for general PIO: 3
+   Number of I/O registers:      2 out of   117 (2%)
+   Number of LUT4s:           108 out of  5280 (2%)
+      Number of logic LUT4s:              33
+      Number of inserted feedthru LUT4s:   3
+      Number of ripple logic:             36 (72 LUT4s)
+   Number of IO sites used:   4 out of 39 (10%)
+      Number of IO sites used for general PIO: 4
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 3 out of 36 (8%)
+      Number of IO sites used for PIO+I3C: 4 out of 36 (11%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 3 out of 39 (8%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 4 out of 39 (10%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
@@ -50,16 +50,16 @@ Design Summary
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
-      Net clk: 40 loads, 40 rising, 0 falling (Driver: Pin oscillator/CLKHF)
-   Number of Clock Enables:  2
+      Net clk: 42 loads, 42 rising, 0 falling (Driver: Pin oscillator/CLKHF)
+   Number of Clock Enables:  3
       Net VCC_net: 1 loads, 0 SLICEs
-      Net n563: 12 loads, 12 SLICEs
+      Net n653: 12 loads, 12 SLICEs
+      Net n562: 11 loads, 11 SLICEs
    Number of LSRs:  4
-      Net n508: 12 loads, 12 SLICEs
-      Net n529: 5 loads, 5 SLICEs
-      Net n531: 8 loads, 8 SLICEs
-      Net n530: 12 loads, 12 SLICEs
-   Top 10 highest fanout non-clock nets:
+      Net n564: 12 loads, 12 SLICEs
+      Net n393: 8 loads, 8 SLICEs
+      Net n587: 11 loads, 11 SLICEs
+      Net n585: 5 loads, 5 SLICEs
 
                                     Page 1
 
@@ -69,16 +69,17 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net VCC_net: 28 loads
-      Net n508: 12 loads
-      Net n530: 12 loads
-      Net n563: 12 loads
-      Net n531: 8 loads
-      Net n529: 6 loads
+   Top 10 highest fanout non-clock nets:
+      Net VCC_net: 47 loads
+      Net n564: 12 loads
+      Net n653: 12 loads
+      Net n562: 11 loads
+      Net n587: 11 loads
+      Net n393: 8 loads
+      Net n585: 6 loads
+      Net n39: 4 loads
       Net burst_count[11]: 3 loads
       Net burst_count[12]: 3 loads
-      Net burst_count[13]: 3 loads
-      Net burst_count[14]: 3 loads
 
 
 
@@ -106,6 +107,8 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | detected_n          | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| trigger_n           | INPUT     |           | I     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 
 Removed logic
 -------------
@@ -122,11 +125,8 @@ OSC 1:                                 Pin/Node Value
   OSC Output:                          NODE     clk
   DIV Setting:                                  01
 
-ASIC Components
----------------
 
-Instance Name: oscillator
-         Type: HFOSC
+
 
                                     Page 2
 
@@ -134,15 +134,20 @@ Instance Name: oscillator
 
 
 
-ASIC Components (cont)
-----------------------
+ASIC Components
+---------------
+
 Instance Name: rx_meta_c
          Type: IOLOGIC
+Instance Name: trigger_meta_c
+         Type: IOLOGIC
+Instance Name: oscillator
+         Type: HFOSC
 
 Constraint Summary
 ------------------
 
-   Total number of constraints: 5
+   Total number of constraints: 8
    Total number of constraints dropped: 0
 
 Run Time and Memory Usage
@@ -151,12 +156,7 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 68 MB
-Checksum -- map: b4efc4e4851eae0c4694ca68c4d8fb02d31c26
-
-
-
-
-
+Checksum -- map: e5a6f6a6f6e79c8fe88efe45ebcbfd2a250d0068
 
 
 

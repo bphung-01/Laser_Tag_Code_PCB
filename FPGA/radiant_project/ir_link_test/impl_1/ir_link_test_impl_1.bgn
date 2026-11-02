@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Nov  1 18:59:41 2026
+Sun Nov  1 19:31:41 2026
 
 
 Command: bitgen -w -gui -msgset C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test/promote.xml -freq 0 ir_link_test_impl_1.udb C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test/impl_1/ir_link_test_impl_1 
@@ -25,6 +25,6 @@ Saving bit stream in "C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/r
 Bitstream generation complete!
 
 Total CPU Time: 0 secs 
-Total REAL Time: 4 secs 
-Peak Memory Usage: 119 MB
+Total REAL Time: 5 secs 
+Peak Memory Usage: 120 MB
 

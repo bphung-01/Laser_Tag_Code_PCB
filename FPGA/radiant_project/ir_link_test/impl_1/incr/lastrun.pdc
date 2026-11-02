@@ -1,3 +1,6 @@
 ldc_set_location -site {19} [get_ports ir_rx_n]
 ldc_set_location -site {42} [get_ports detected_n]
 ldc_set_location -site {20} [get_ports ir_tx]
+ldc_set_location -site {34} [get_ports trigger_n]
+ldc_set_port -iobuf {PULLMODE=100K} [get_ports trigger_n]
+ldc_set_port -iobuf {PULLMODE=NA} [get_ports ir_rx_n]

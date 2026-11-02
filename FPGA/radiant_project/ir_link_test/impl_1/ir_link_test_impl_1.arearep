@@ -1,14 +1,14 @@
 ----------------------------------------------------------------------
 Report for cell ir_link_test.TECH
 Register bits:  71 of 5280 (1.345%)
-I/O cells:      3
+I/O cells:      4
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        37          100.0
+                               CCU2        36          100.0
                             FD1P3XZ        71          100.0
                          HSOSC_CORE         1          100.0
-                                 IB         1          100.0
-                              IOL_B         1          100.0
-                               LUT4        35          100.0
+                                 IB         2          100.0
+                              IOL_B         2          100.0
+                               LUT4        32          100.0
                                  OB         2          100.0
-                              TOTAL       148
+                              TOTAL       146
