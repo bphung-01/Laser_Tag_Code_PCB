@@ -1,4 +1,993 @@
 
 "C:/lscc/radiant/2026.1/tcltk/windows/bin/tclsh" "ir_link_test_impl_1_synthesize.tcl"
-CreateProcess failed.
-An Application Control policy has blocked this file.
+
+cpe -syn lse -f ir_link_test_impl_1.cprj -a iCE40UP -o ir_link_test_impl_1_cpe.ldc
+CPE: Constraint Propagation Engine: starting
+CRITICAL <35831036> - No top module name specified for top-level design. Results may be inaccurate. Please go to View->Show Views->Hierarchy or Project->Active Implementation->Set Top-Level Unit in order to set top module.
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\standard.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\standard.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\standard.vhd(9): analyzing package standard. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\std_1164.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\std_1164.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\std_1164.vhd(15): analyzing package std_logic_1164. VHDL-1014
+INFO <35921013> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\std_1164.vhd(178): analyzing package body std_logic_1164. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\mgc_qsim.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\mgc_qsim.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\mgc_qsim.vhd(18): analyzing package qsim_logic. VHDL-1014
+INFO <35921013> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\mgc_qsim.vhd(753): analyzing package body qsim_logic. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\numeric_bit.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\numeric_bit.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\numeric_bit.vhd(54): analyzing package numeric_bit. VHDL-1014
+INFO <35921013> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\numeric_bit.vhd(834): analyzing package body numeric_bit. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\numeric_std.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\numeric_std.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\numeric_std.vhd(57): analyzing package numeric_std. VHDL-1014
+INFO <35921013> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\numeric_std.vhd(874): analyzing package body numeric_std. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\textio.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\textio.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\textio.vhd(13): analyzing package textio. VHDL-1014
+INFO <35921013> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\textio.vhd(114): analyzing package body textio. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\std_logic_textio.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\std_logic_textio.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\std_logic_textio.vhd(26): analyzing package std_logic_textio. VHDL-1014
+INFO <35921013> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\std_logic_textio.vhd(72): analyzing package body std_logic_textio. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_misc.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_misc.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_misc.vhd(30): analyzing package std_logic_misc. VHDL-1014
+INFO <35921013> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_misc.vhd(182): analyzing package body std_logic_misc. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\math_real.vhd. VHDL-1481
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\math_real.vhd(56): analyzing package math_real. VHDL-1014
+INFO <35921013> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\math_real.vhd(685): analyzing package body math_real. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\mixed_lang_vltype.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\mixed_lang_vltype.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\mixed_lang_vltype.vhd(9): analyzing package vl_types. VHDL-1014
+INFO <35921013> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\mixed_lang_vltype.vhd(88): analyzing package body vl_types. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_arit.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_arit.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_arit.vhd(25): analyzing package std_logic_arith. VHDL-1014
+INFO <35921013> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_arit.vhd(206): analyzing package body std_logic_arith. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_attr.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_attr.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_attr.vhd(39): analyzing package attributes. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_sign.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_sign.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_sign.vhd(35): analyzing package std_logic_signed. VHDL-1014
+INFO <35921013> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_sign.vhd(96): analyzing package body std_logic_signed. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_unsi.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_unsi.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_unsi.vhd(35): analyzing package std_logic_unsigned. VHDL-1014
+INFO <35921013> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\syn_unsi.vhd(94): analyzing package body std_logic_unsigned. VHDL-1013
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\synattr.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\synattr.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ispfpga\vhdl_packages\synattr.vhd(50): analyzing package attributes. VHDL-1014
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\vhdl\iCE40UP.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\vhdl\iCE40UP.vhd
+
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v. VERI-1482
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(1): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_addsub.v(40): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(2): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_add.v(50): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(3): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_complex_mult.v(52): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(4): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_counter.v(39): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(5): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_fifo.v(44): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(6): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_fifo_dc.v(47): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_fifo_dc.v(48): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(128): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_distributed_ram.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(129): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_ecc.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(130): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_flag_and_cnts_logic.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(131): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_gray_reg.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(132): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_gray_synchronizer.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(133): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_prim.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(134): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_rd_ctrl_logic.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(135): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_rd_output_logic.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(136): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_ring_counter.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(137): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_wr_ctrl_logic.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(138): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(139): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_prim_gen.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(140): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_rd_ctrl_logic.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(141): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_wr_ctrl_logic.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(7): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_mac.v(52): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(8): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(9): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_multaddsub.v(52): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(10): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_mult.v(51): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(11): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dp.v(48): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dp.v(49): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v(438): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(64): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_behavioral.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(66): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_lut_decode.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(478): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_functions.vh. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(609): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_functions.vh. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(1511): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_functions.vh. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(2456): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_functions.vh. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(4673): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_functions.vh. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(12): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dq.v(45): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dq.v(46): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v(2839): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/hsiao_ecc_encoder.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v(2840): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/hsiao_ecc_decoder.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v(2841): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq_lut_decode.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(13): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_rom.v(45): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(14): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_sub.v(50): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(15): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dp_be.v(50): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v(438): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(16): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dq_be.v(46): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v(2839): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/hsiao_ecc_encoder.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v(2840): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/hsiao_ecc_decoder.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v(2841): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq_lut_decode.v. VERI-1328
+INFO <35901328> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v(17): analyzing included file C:/lscc/radiant/2026.1/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/src/ir_link_test.sv. VERI-1482
+Analyzing VHDL file C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd. VHDL-1481
+Analyzing VHDL file C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd
+
+INFO <35921014> - C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd(4): analyzing package components. VHDL-1014
+Setting 'ir_link_test' as the top-level module.
+Top module name (Verilog): ir_link_test
+INFO <35901018> - C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/src/ir_link_test.sv(1): compiling module ir_link_test. VERI-1018
+INFO <35901018> - C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=2&apos;b01). VERI-1018
+Source compile complete.
+Writing output files.
+CPE Completed. ir_link_test_impl_1_cpe.ldc and CPEReport.txt produced.
+CPE: Constraint Propagation Engine: completed
+
+
+
+synthesis -f C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test/impl_1/ir_link_test_impl_1_lattice.synproj -logfile ir_link_test_impl_1_lattice.srp
+synthesis:  version Radiant Software (64-bit) 2026.1.0.37.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Nov  1 18:59:21 2026
+
+
+Command Line:  C:\lscc\radiant\2026.1\ispfpga\bin\nt64\synthesis.exe -f C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test/impl_1/ir_link_test_impl_1_lattice.synproj -logfile ir_link_test_impl_1_lattice.srp -gui -msgset C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test/promote.xml 
+
+Lattice Synthesis Engine launched.
+
+CRITICAL <35002005> - synthesis: Top-level unit not specified. This may cause functional errors after synthesis.
+Please set the correct top-level unit via:
+  - GUI: Project > Active Implementation > Set Top-Level Unit...
+  - TCL: prj_set_top_module <name>
+  - CLI: -top <name>
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+
+###################### Device Information ######################
+----------------------------------------------------------------
+Lattice Family        | iCE40UP
+----------------------------------------------------------------
+Device                | iCE40UP5K
+----------------------------------------------------------------
+Package               | SG48
+----------------------------------------------------------------
+Performance Grade     | High-Performance_1.2V
+----------------------------------------------------------------
+################################################################
+
+####################### Device Resources #######################
+----------------------------------------------------------------
+Logic Cells           | 5280
+----------------------------------------------------------------
+RAM Blocks            | 30
+----------------------------------------------------------------
+DSP Blocks            | 8
+----------------------------------------------------------------
+PLLs                  | 1
+----------------------------------------------------------------
+I/O Pins              | 56
+----------------------------------------------------------------
+################################################################
+
+Resolving user-selected strategy settings...
+
+INFO <35001797> - Use DCC Insertion disabled by default.
+
+###################### Strategy Settings #######################
+----------------------------------------------------------------
+Optimization Goal     | Area
+----------------------------------------------------------------
+Top-level Module Name | 
+----------------------------------------------------------------
+Target Frequency      | 200.000 MHz
+----------------------------------------------------------------
+Maximum Fanout        | 1000
+----------------------------------------------------------------
+Timing Path Count     | 3
+----------------------------------------------------------------
+RAM Read/Write Check  | False
+----------------------------------------------------------------
+BRAM Utilization      | 100.0%
+----------------------------------------------------------------
+DSP Usage             | True
+----------------------------------------------------------------
+DSP Utilization       | 100.0%
+----------------------------------------------------------------
+FSM Encoding Style    | Auto
+----------------------------------------------------------------
+Resolve Mixed Drivers | False
+----------------------------------------------------------------
+Fix Gated Clocks      | True
+----------------------------------------------------------------
+Mux Style             | Auto
+----------------------------------------------------------------
+Use Carry Chain       | True
+----------------------------------------------------------------
+Carry Chain Length    | Infinite
+----------------------------------------------------------------
+Loop Limit            | 1950
+----------------------------------------------------------------
+Use I/O Insertion     | True
+----------------------------------------------------------------
+Use I/O Registers     | True
+----------------------------------------------------------------
+Resource Sharing      | True
+----------------------------------------------------------------
+Propagate Constants   | True
+----------------------------------------------------------------
+Remove Duplicate Reg  | True
+----------------------------------------------------------------
+Force GSR             | False
+----------------------------------------------------------------
+ROM Style             | Auto
+----------------------------------------------------------------
+RAM Style             | Auto
+----------------------------------------------------------------
+Remove LOC Properties | False
+----------------------------------------------------------------
+Partition Flow        | False
+----------------------------------------------------------------
+Use DCC Insertion     | None
+----------------------------------------------------------------
+################################################################
+
+
+The -comp option is FALSE.
+The -syn option is FALSE.
+
+Output HDL filename: ir_link_test_impl_1.vm
+-sdc option: SDC file input is ir_link_test_impl_1_cpe.ldc.
+-path . (searchpath added)
+-path .. (searchpath added)
+-path ../../../src (searchpath added)
+-path C:/lscc/radiant/2026.1/ispfpga/ice40tp/data (searchpath added)
+Mixed language design
+CRITICAL <35001476> - A top-level module has not been specified for the mixed language design.
+Verilog design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file: ../../../src/ir_link_test.sv
+VHDL library: pmi
+VHDL design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd
+
+Compiling design...
+
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\generic.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\simulation\verilog\iCE40UP\iCE40UP_sp.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v. VERI-1482
+Analyzing Verilog file ../../../src/ir_link_test.sv. VERI-1482
+Setting 'ir_link_test' as the top-level module.
+Top module name (Verilog): ir_link_test
+INFO <35901018> - ../../../src/ir_link_test.sv(1): compiling module ir_link_test. VERI-1018
+INFO <35901018> - C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=2&apos;b01). VERI-1018
+[Parameter Setting Section Start]
+
+	[Parameter Settings for Instance(s): oscillator]
+	(Module: HSOSC)
+		CLKHF_DIV                 2'b01
+
+[Parameter Setting Section End]
+
+
+
+WARNING <35001779> - Initial value found on instance light_timer_i22 will be ignored.
+WARNING <35001779> - Initial value found on instance light_timer_i20 will be ignored.
+WARNING <35001779> - Initial value found on instance light_timer_i19 will be ignored.
+WARNING <35001779> - Initial value found on instance light_timer_i17 will be ignored.
+WARNING <35001779> - Initial value found on instance light_timer_i16 will be ignored.
+WARNING <35001779> - Initial value found on instance light_timer_i15 will be ignored.
+WARNING <35001779> - Initial value found on instance light_timer_i11 will be ignored.
+WARNING <35001779> - Initial value found on instance light_timer_i10 will be ignored.
+WARNING <35001779> - Initial value found on instance light_timer_i8 will be ignored.
+WARNING <35001779> - Initial value found on instance light_timer_i7 will be ignored.
+WARNING <35002062> - Port rejected for I/O register mapping: ir_tx
+INFO <35002061> - Port accepted for I/O register mapping: ir_rx_n
+WARNING <35002062> - Port rejected for I/O register mapping: detected_n
+INFO <35002039> - Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
+
+################### Begin Area Report (ir_link_test)######################
+Number of register bits => 71 of 5280 (1 % )
+CCU2 => 37
+FD1P3XZ => 71
+HSOSC_CORE => 1
+IB => 1
+IOL_B => 1
+LUT4 => 35
+OB => 2
+################### End Area Report ##################
+Number of odd-length carry chains : 3
+Number of even-length carry chains : 1
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk, loads : 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : n563, loads : 29
+  Net : n530, loads : 28
+  Net : n508, loads : 23
+  Net : n531, loads : 21
+  Net : n529, loads : 15
+  Net : ir_tx_c, loads : 14
+  Net : n122[21], loads : 13
+  Net : n122[22], loads : 13
+  Net : n71[21], loads : 13
+  Net : n969, loads : 13
+################### End Clock Report ##################
+
+################### Begin Constraint Report ######################
+Constraint Summary:
+  Total number of constraints: 0
+  Total number of constraints dropped: 0
+###################  End Constraint Report  ######################
+
+Peak Memory Usage: 91 MB
+
+--------------------------------------------------------------
+Total CPU Time: 0 secs 
+Total REAL Time: 3 secs 
+--------------------------------------------------------------
+Checksum -- synthesis -- netlist: c0d4576d35fd3f60b160139115d8fe81decaceff
+
+
+
+postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o ir_link_test_impl_1_syn.udb ir_link_test_impl_1.vm -ldc ir_link_test_impl_1.ldc
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2026.1.0.37.0
+Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o ir_link_test_impl_1_syn.udb -ldc ir_link_test_impl_1.ldc -gui -msgset C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test/promote.xml ir_link_test_impl_1.vm 
+   Architecture:     iCE40UP
+   Device:           iCE40UP5K
+   Package:          SG48
+   Performance:      High-Performance_1.2V
+Reading input file 'ir_link_test_impl_1.vm' ...
+CPU Time to convert: 0.046875
+REAL Time to convert: 0
+convert PEAK Memory Usage: 34 MB
+convert CURRENT Memory Usage: 34 MB
+Reading constraint file 'ir_link_test_impl_1.ldc' ...
+Removing unused logic ...
+Starting design annotation....
+ 
+Constraint Summary:
+   Total number of constraints: 2
+   Total number of constraints dropped: 0
+ 
+Writing output file 'ir_link_test_impl_1_syn.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 43 MB
+Checksum -- postsyn: 95ec4a754074f7e73d9e59fb5fe351f090937911
+
+
+
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1   -html -rpt "ir_link_test_impl_1.tws" "ir_link_test_impl_1_syn.udb" 
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt ir_link_test_impl_1.tws ir_link_test_impl_1_syn.udb -gui -msgset C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test/promote.xml
+Starting design reading...
+Initializing timer
+Starting design annotation....
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2026.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+
+Starting full timing analysis...
+Connections ignored  80  counted  483  covered  453
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 57 MB
+
+ 0.197100s wall, 0.109375s user + 0.078125s system = 0.187500s CPU (95.1%)
+
+
+log2sim -w -o "ir_link_test_impl_1_syn.vo"  "ir_link_test_impl_1_syn.udb" 
+
+pnmainc -log pnmain "ir_link_test_impl_1_map.tcl"
+map:  version Radiant Software (64-bit) 2026.1.0.37.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:   map -pdc C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test/constraints.pdc -i ir_link_test_impl_1_syn.udb -o ir_link_test_impl_1_map.udb -mp ir_link_test_impl_1.mrp -hierrpt -gui -msgset C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test/promote.xml 
+
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2026.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+
+
+
+Design:  ir_link_test
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Running general design DRC...
+
+
+
+
+Design Summary:
+   Number of slice registers:  71 out of  5280 (1%)
+   Number of I/O registers:      1 out of   117 (1%)
+   Number of LUT4s:           111 out of  5280 (2%)
+      Number of logic LUT4s:              36
+      Number of inserted feedthru LUT4s:   1
+      Number of ripple logic:             37 (74 LUT4s)
+   Number of IO sites used:   3 out of 39 (8%)
+      Number of IO sites used for general PIO: 3
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 3 out of 36 (8%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 3 out of 39 (8%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  1 out of 1 (100%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  1
+      Net clk: 40 loads, 40 rising, 0 falling (Driver: Pin oscillator/CLKHF)
+   Number of Clock Enables:  2
+      Net VCC_net: 1 loads, 0 SLICEs
+      Net n563: 12 loads, 12 SLICEs
+   Number of LSRs:  4
+      Net n508: 12 loads, 12 SLICEs
+      Net n529: 5 loads, 5 SLICEs
+      Net n531: 8 loads, 8 SLICEs
+      Net n530: 12 loads, 12 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net VCC_net: 28 loads
+      Net n508: 12 loads
+      Net n530: 12 loads
+      Net n563: 12 loads
+      Net n531: 8 loads
+      Net n529: 6 loads
+      Net burst_count[11]: 3 loads
+      Net burst_count[12]: 3 loads
+      Net burst_count[13]: 3 loads
+      Net burst_count[14]: 3 loads
+Running physical design DRC...
+
+ 
+
+
+   Number of warnings:  0
+   Number of criticals: 0
+   Number of errors:    0
+
+Constraint Summary:
+   Total number of constraints: 5
+   Total number of constraints dropped: 0
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 68 MB
+
+Checksum -- map: b4efc4e4851eae0c4694ca68c4d8fb02d31c26
+**** CMD map_run - CPU/Elapsed: 0 secs / 0 secs , MEM/Increased: 61.637 Mb/ 0.246 Mb, DATE: 18:59:29 11/01/26
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /0 secs 
+
+pnmainc -log pnmain "ir_link_test_impl_1_par.tcl"
+
+PAR: Place And Route Radiant Software (64-bit) 2026.1.0.37.0.
+PARed on: Sun Nov  1 18:59:32 2026
+
+Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
+	ir_link_test_impl_1_map.udb ir_link_test_impl_1_par.dir/5_1.udb 
+
+Loading ir_link_test_impl_1_map.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2026.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Successfully read the udb in 0.00 s.
+
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Design:  ir_link_test
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+Constraint Summary
+   Total number of constraints: 4
+   Total number of constraints dropped: 0
+
+Successfully loaded device info and constraints in 0.00 s.
+
+Beginning Place Design 
+Phase 1 Placer Initialization 
+Number of Signals: 250
+Number of Connections: 521
+Phase 1 Placer Initialization Complete: Time (s) - CPU Time : 0.02, Real Time : 0.00  |   Memory (MB) - Peak Memory : 79.62, Gain Memory : 4.56  
+
+Time: cpu = 00:00:00 ; elapsed : 00:00:00 . Memory (MB): peak = 79.62 ; gain = 4.56 
+
+Phase 2 Logic Packing 
+Device utilization summary:
+
+   SLICE (est.)      60/2640          2% used
+     LUT            111/5280          2% used
+     REG             71/5280          1% used
+   PIO                3/56            5% used
+                      3/36            8% bonded
+   IOLOGIC            1/56            2% used
+   DSP                0/8             0% used
+   I2C                0/2             0% used
+   HFOSC              1/1           100% used
+   LFOSC              0/1             0% used
+   LEDDA_IP           0/1             0% used
+   RGBA_DRV           0/1             0% used
+   FILTER             0/2             0% used
+   SRAM               0/4             0% used
+   WARMBOOT           0/1             0% used
+   SPI                0/2             0% used
+   EBR                0/30            0% used
+   PLL                0/1             0% used
+   RGBOUTBUF          0/3             0% used
+   I3C                0/2             0% used
+   OPENDRAIN          0/3             0% used
+
+Phase 2 Logic Packing Complete: Time (s) - CPU Time : 0.00, Real Time : 0.00  |   Memory (MB) - Peak Memory : 79.75, Gain Memory : 0.09  
+
+Time: cpu = 00:00:00 ; elapsed : 00:00:00 . Memory (MB): peak = 79.75 ; gain = 0.09 
+
+Phase 3 Hierarchical Placement 
+Pin Constraint Summary:
+   3 out of 3 pins locked (100% locked).
+Phase 3.1 Clustering & Global Placement 
+Phase 3.1 Clustering & Global Placement Complete: Time (s) - CPU Time : 0.00, Real Time : 0.00  |   Memory (MB) - Peak Memory : 80.34, Gain Memory : 0.00  
+
+Time: cpu = 00:00:00 ; elapsed : 00:00:00 . Memory (MB): peak = 80.34 ; gain = 0.00 
+
+Phase 3 Hierarchical Placement Complete: Time (s) - CPU Time : 0.00, Real Time : 0.01  |   Memory (MB) - Peak Memory : 80.36, Gain Memory : 0.61  
+
+Time: cpu = 00:00:00 ; elapsed : 00:00:00 . Memory (MB): peak = 80.36 ; gain = 0.61 
+
+Phase 4 Apollo Placement 
+
+................
+Finished Placer Phase 0 (AP).  CPU time: 0 secs , REAL time: 0 secs 
+
+Phase 4 Apollo Placement Complete: Time (s) - CPU Time : 0.09, Real Time : 0.09  |   Memory (MB) - Peak Memory : 84.60, Gain Memory : 4.24  
+
+Time: cpu = 00:00:00 ; elapsed : 00:00:00 . Memory (MB): peak = 84.60 ; gain = 4.24 
+
+Phase 5 Constructive Placement 
+Phase 5.1 Iterative Refinement 
+..  ..
+....................
+
+Placer score = 16118.
+
+Device SLICE utilization summary after final SLICE packing:
+   SLICE             59/2640          2% used
+
+Phase 5.1 Iterative Refinement Complete: Time (s) - CPU Time : 3.64, Real Time : 3.65  |   Memory (MB) - Peak Memory : 110.47, Gain Memory : 25.87  
+
+Time: cpu = 00:00:04 ; elapsed : 00:00:04 . Memory (MB): peak = 110.47 ; gain = 25.87 
+
+Phase 5 Constructive Placement Complete: Time (s) - CPU Time : 3.64, Real Time : 3.65  |   Memory (MB) - Peak Memory : 110.47, Gain Memory : 25.87  
+
+Time: cpu = 00:00:04 ; elapsed : 00:00:04 . Memory (MB): peak = 110.47 ; gain = 25.87 
+
+Phase 6 Placement Optimization 
+Phase 6.1 Local Optimization 
+.
+
+Placer score =  30885
+Phase 6.1 Local Optimization Complete: Time (s) - CPU Time : 0.00, Real Time : 0.01  |   Memory (MB) - Peak Memory : 110.47, Gain Memory : 3.54  
+
+Time: cpu = 00:00:04 ; elapsed : 00:00:04 . Memory (MB): peak = 110.47 ; gain = 3.54 
+
+Phase 6 Placement Optimization Complete: Time (s) - CPU Time : 0.00, Real Time : 0.01  |   Memory (MB) - Peak Memory : 110.47, Gain Memory : 3.54  
+
+Time: cpu = 00:00:04 ; elapsed : 00:00:04 . Memory (MB): peak = 110.47 ; gain = 3.54 
+
+Phase 7 IC1PL_TKPP 
+
+------------------ Clock Report ------------------
+
+Global Clocks :
+  PRIMARY "clk" from comp "oscillator" on site "HFOSC_R1C32", clk load = 40, ce load = 0, sr load = 0
+
+  PRIMARY  : 1 out of 8 (12%)
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   3 out of 56 (5.4%) I/O sites used.
+   3 out of 36 (8.3%) bonded I/O sites used.
+   Number of I/O components: 3; differential: 0
+   Number of Vref pins used: 0
+
+I/O Bank Usage Summary:
++----------+---------------+------------+------------+------------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+---------------+------------+------------+------------+
+| 0        | 1 / 14 (  7%) | 3.3V       |            |            |
+| 1        | 2 / 14 ( 14%) | 3.3V       |            |            |
+| 2        | 0 / 8 (  0%)  | OFF        |            |            |
++----------+---------------+------------+------------+------------+
+
+Phase 7 IC1PL_TKPP Complete: Time (s) - CPU Time : 0.02, Real Time : 0.00  |   Memory (MB) - Peak Memory : 110.47, Gain Memory : 3.50  
+
+Time: cpu = 00:00:04 ; elapsed : 00:00:04 . Memory (MB): peak = 110.47 ; gain = 3.50 
+
+Total Placer CPU time: 4 secs, REAL time = 4 secs
+
+
+Checksum -- place: 21ec167b19fc759efe86e8beaf042e32311399b9
+Ending Place Design : Time (s) - CPU Time : 3.77, Real Time : 3.78  |   Memory (MB) - Peak Memory : 110.47, Gain Memory : 35.42  
+
+Time: cpu = 00:00:04 ; elapsed : 00:00:04 . Memory (MB): peak = 110.47 ; gain = 35.42 
+
+
+ Phase Summary Table: 	
++--------------------------------------------------------+-------------+--------------+-----------------+----------------+
+| Phase Name                                             | CPU Time(s) | Wall Time(s) | Peak Memory(MB) | Memory Gain(MB)|
++--------------------------------------------------------+-------------+--------------+-----------------+----------------+
+| Phase 1 Placer Initialization                          | 0.02        |         0.00 |           79.62 |           4.56 |
+| Phase 2 Logic Packing                                  | 0.00        |         0.00 |           79.75 |           0.09 |
+| Phase 3 Hierarchical Placement                         | 0.00        |         0.01 |           80.36 |           0.61 |
+| Phase 3.1 Clustering & Global Placement                | 0.00        |         0.00 |           80.34 |           0.00 |
+| Phase 4 Apollo Placement                               | 0.09        |         0.09 |           84.60 |           4.24 |
+| Phase 5 Constructive Placement                         | 3.64        |         3.65 |          110.47 |          25.87 |
+| Phase 5.1 Iterative Refinement                         | 3.64        |         3.65 |          110.47 |          25.87 |
+| Phase 6 Placement Optimization                         | 0.00        |         0.01 |          110.47 |           3.54 |
+| Phase 6.1 Local Optimization                           | 0.00        |         0.01 |          110.47 |           3.54 |
+| Phase 7 IC1PL_TKPP                                     | 0.02        |         0.00 |          110.47 |           3.50 |
++--------------------------------------------------------+-------------+--------------+-----------------+----------------+
+Writing design to file ir_link_test_impl_1_par.dir/5_1.udb ...
+
+Starting Route Task
+Beginning Route Design 
+Phase 1 Build Route Design 
+
+Start NBR router at 18:59:36 11/01/26
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in timing report. You should always run the timing    
+      tool to verify your design.                                
+*****************************************************************
+
+Phase 1 Build Route Design Complete: Time (s) - CPU Time : 0.03, Real Time : 0.04  |   Memory (MB) - Peak Memory : 110.47, Gain Memory : 30.16  
+
+Time: cpu = 00:00:00 ; elapsed : 00:00:00 . Memory (MB): peak = 110.47 ; gain = 30.16 
+
+Phase 2 Design Checks and Routing Setup 
+Phase 2 Design Checks and Routing Setup Complete: Time (s) - CPU Time : 0.00, Real Time : 0.00  |   Memory (MB) - Peak Memory : 110.47, Gain Memory : 11.32  
+
+Time: cpu = 00:00:00 ; elapsed : 00:00:00 . Memory (MB): peak = 110.47 ; gain = 11.32 
+
+Phase 3 Dedicated Net and Clock Routing 
+Phase 3.1 Routing User Constraints 
+Phase 3.1 Routing User Constraints Complete: Time (s) - CPU Time : 0.28, Real Time : 0.29  |   Memory (MB) - Peak Memory : 114.17, Gain Memory : 15.02  
+
+Time: cpu = 00:00:00 ; elapsed : 00:00:00 . Memory (MB): peak = 114.17 ; gain = 15.02 
+
+Phase 3.2 Dedicated Routing 
+Phase 3.2 Dedicated Routing Complete: Time (s) - CPU Time : 0.00, Real Time : 0.00  |   Memory (MB) - Peak Memory : 114.17, Gain Memory : 15.91  
+
+Time: cpu = 00:00:00 ; elapsed : 00:00:00 . Memory (MB): peak = 114.17 ; gain = 15.91 
+
+Phase 3.3 Clock Net Routing 
+Phase 3.3 Clock Net Routing Complete: Time (s) - CPU Time : 0.02, Real Time : 0.00  |   Memory (MB) - Peak Memory : 114.17, Gain Memory : 20.50  
+
+Time: cpu = 00:00:00 ; elapsed : 00:00:00 . Memory (MB): peak = 114.17 ; gain = 20.50 
+
+Phase 3.4 Dedicated Net and Clock Routing Finalization 
+Preassignment Summary:
+--------------------------------------------------------------------------------
+1 global clock signals routed
+182 connections routed (of 521 total) (34.93%)
+---------------------------------------------------------
+Clock routing summary:
+Primary clocks (1 used out of 8 available):
+#4  Signal "clk"
+       Clock   loads: 40    out of    40 routed (100.00%)
+---------------------------------------------------------
+--------------------------------------------------------------------------------
+Phase 3.4 Dedicated Net and Clock Routing Finalization Complete: Time (s) - CPU Time : 0.00, Real Time : 0.00  |   Memory (MB) - Peak Memory : 114.17, Gain Memory : 20.45  
+
+Time: cpu = 00:00:00 ; elapsed : 00:00:00 . Memory (MB): peak = 114.17 ; gain = 20.45 
+
+Total conns with timing constraints =        0
+Phase 3 Dedicated Net and Clock Routing Complete: Time (s) - CPU Time : 0.34, Real Time : 0.34  |   Memory (MB) - Peak Memory : 114.17, Gain Memory : 15.02  
+
+Time: cpu = 00:00:00 ; elapsed : 00:00:00 . Memory (MB): peak = 114.17 ; gain = 15.02 
+
+Phase 4 Pre-Detailed Routing 
+Phase 4 Pre-Detailed Routing Complete: Time (s) - CPU Time : 0.00, Real Time : 0.00  |   Memory (MB) - Peak Memory : 114.17, Gain Memory : 20.09  
+
+Time: cpu = 00:00:00 ; elapsed : 00:00:00 . Memory (MB): peak = 114.17 ; gain = 20.09 
+
+Phase 5 Detailed Routing 
+    TimerIf::skewscore 0
+Phase 5.1 Initial Detailed Routing 
+
+Start NBR section for initial routing at 18:59:37 11/01/26
+Level 4, iteration 1
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Routing in Serial Mode ......
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 27.933ns/0.000ns; real time: 0 secs 
+
+Info: Initial congestion level at 75.00% usage is 0
+Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
+Phase 5.1 Initial Detailed Routing Complete: Time (s) - CPU Time : 0.27, Real Time : 0.26  |   Memory (MB) - Peak Memory : 121.02, Gain Memory : 26.93  
+
+Time: cpu = 00:00:01 ; elapsed : 00:00:01 . Memory (MB): peak = 121.02 ; gain = 26.93 
+
+Phase 5.2 Rip-Up and Route 
+
+Start NBR section for normal routing at 18:59:37 11/01/26
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 27.933ns/0.000ns; real time: 0 secs 
+Phase 5.2 Rip-Up and Route Complete: Time (s) - CPU Time : 0.00, Real Time : 0.01  |   Memory (MB) - Peak Memory : 121.03, Gain Memory : 0.02  
+
+Time: cpu = 00:00:01 ; elapsed : 00:00:01 . Memory (MB): peak = 121.03 ; gain = 0.02 
+
+Phase 5.3 Rip-Up and Reroute for setup timing improvement 
+Phase 5.3 Rip-Up and Reroute for setup timing improvement Complete: Time (s) - CPU Time : 0.00, Real Time : 0.00  |   Memory (MB) - Peak Memory : 121.03, Gain Memory : 0.00  
+
+Time: cpu = 00:00:01 ; elapsed : 00:00:01 . Memory (MB): peak = 121.03 ; gain = 0.00 
+
+Phase 5.4 Rip-Up and Reroute for hold timing fix 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 18:59:37 11/01/26
+Changing speed to m;   changing temperature to -40
+Changing speed to 6;   changing temperature to 100
+Phase 5.4 Rip-Up and Reroute for hold timing fix Complete: Time (s) - CPU Time : 0.14, Real Time : 0.15  |   Memory (MB) - Peak Memory : 128.25, Gain Memory : 7.22  
+
+Time: cpu = 00:00:01 ; elapsed : 00:00:01 . Memory (MB): peak = 128.25 ; gain = 7.22 
+
+Phase 5.5 TNS CleanUp 
+
+Start NBR section for post-routing at 18:59:37 11/01/26
+Phase 5.5 TNS CleanUp Complete: Time (s) - CPU Time : 0.02, Real Time : 0.00  |   Memory (MB) - Peak Memory : 128.25, Gain Memory : 1.49  
+
+Time: cpu = 00:00:01 ; elapsed : 00:00:01 . Memory (MB): peak = 128.25 ; gain = 1.49 
+
+Phase 5.6 Detail Routing Finalization 
+
+End NBR router with 0 unrouted connection(s)
+Changing speed to m;   changing temperature to -40
+Changing speed to 6;   changing temperature to 100
+
+Checksum -- route: 5f1080dc6f370e66a76f713158543907e5755030
+Phase 5.6 Detail Routing Finalization Complete: Time (s) - CPU Time : 0.23, Real Time : 0.24  |   Memory (MB) - Peak Memory : 128.25, Gain Memory : 1.48  
+
+Time: cpu = 00:00:01 ; elapsed : 00:00:01 . Memory (MB): peak = 128.25 ; gain = 1.48 
+
+
+Phase 5 Detailed Routing Complete: Time (s) - CPU Time : 0.66, Real Time : 0.66  |   Memory (MB) - Peak Memory : 128.25, Gain Memory : 34.18  
+
+Time: cpu = 00:00:01 ; elapsed : 00:00:01 . Memory (MB): peak = 128.25 ; gain = 34.18 
+
+Phase 6 Router Finalization 
+Total Router CPU time 1 secs , REAL time: 0 secs 
+Completely routed.
+End of route.  521 routed (100.00%); 0 unrouted.
+Phase 6 Router Finalization Complete: Time (s) - CPU Time : 0.00, Real Time : 0.00  |   Memory (MB) - Peak Memory : 128.25, Gain Memory : 1.47  
+
+Time: cpu = 00:00:01 ; elapsed : 00:00:01 . Memory (MB): peak = 128.25 ; gain = 1.47 
+
+Ending Route Design : Time (s) - CPU Time : 1.06, Real Time : 1.09  |   Memory (MB) - Peak Memory : 128.25, Gain Memory : 47.71  
+
+Time: cpu = 00:00:01 ; elapsed : 00:00:01 . Memory (MB): peak = 128.25 ; gain = 47.71 
+
+
+ Phase Summary Table: 	
++--------------------------------------------------------+-------------+--------------+-----------------+----------------+
+| Phase Name                                             | CPU Time(s) | Wall Time(s) | Peak Memory(MB) | Memory Gain(MB)|
++--------------------------------------------------------+-------------+--------------+-----------------+----------------+
+| Phase 1 Build Route Design                             | 0.03        |         0.04 |          110.47 |          30.16 |
+| Phase 2 Design Checks and Routing Setup                | 0.00        |         0.00 |          110.47 |          11.32 |
+| Phase 3 Dedicated Net and Clock Routing                | 0.34        |         0.34 |          114.17 |          15.02 |
+| Phase 3.1 Routing User Constraints                     | 0.28        |         0.29 |          114.17 |          15.02 |
+| Phase 3.2 Dedicated Routing                            | 0.00        |         0.00 |          114.17 |          15.91 |
+| Phase 3.3 Clock Net Routing                            | 0.02        |         0.00 |          114.17 |          20.50 |
+| Phase 3.4 Dedicated Net and Clock Routing Finalization | 0.00        |         0.00 |          114.17 |          20.45 |
+| Phase 4 Pre-Detailed Routing                           | 0.00        |         0.00 |          114.17 |          20.09 |
+| Phase 5 Detailed Routing                               | 0.66        |         0.66 |          128.25 |          34.18 |
+| Phase 5.1 Initial Detailed Routing                     | 0.27        |         0.26 |          121.02 |          26.93 |
+| Phase 5.2 Rip-Up and Route                             | 0.00        |         0.01 |          121.03 |           0.02 |
+| Phase 5.3 Rip-Up and Reroute for setup timing improve* | 0.00        |         0.00 |          121.03 |           0.00 |
+| Phase 5.4 Rip-Up and Reroute for hold timing fix       | 0.14        |         0.15 |          128.25 |           7.22 |
+| Phase 5.5 TNS CleanUp                                  | 0.02        |         0.00 |          128.25 |           1.49 |
+| Phase 5.6 Detail Routing Finalization                  | 0.23        |         0.24 |          128.25 |           1.48 |
+| Phase 6 Router Finalization                            | 0.00        |         0.00 |          128.25 |           1.47 |
++--------------------------------------------------------+-------------+--------------+-----------------+----------------+
+
+Writing design to file ir_link_test_impl_1_par.dir/5_1.udb ...
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Estimated worst slack<setup/<ns>> = 28.200
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Estimated worst slack<hold/<ns>> = 1.743
+PAR_SUMMARY::Timing score<hold/<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Note: user must run 'timing' for timing closure signoff.
+
+Total CPU  Time: 5 secs 
+Total REAL Time: 5 secs 
+Peak Memory Usage: 128.25 MB
+
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
+**** CMD par_run - CPU/Elapsed: 0 secs / 5 secs , MEM/Increased: 61.817 Mb/ 0.283 Mb, DATE: 18:59:37 11/01/26
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /5 secs 
+
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m   -pwrprd -html -rpt "ir_link_test_impl_1.twr" "ir_link_test_impl_1.udb" 
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt ir_link_test_impl_1.twr ir_link_test_impl_1.udb -gui -msgset C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test/promote.xml
+Starting design reading...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2026.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Loading udb::Database ...
+Design:  ir_link_test
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+
+
+Successfully loading udb, 0.03 seconds
+
+Initializing timer
+Starting design annotation....
+
+Starting full timing analysis...
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Connections ignored  40  counted  441  covered  411
+Changing speed to m;   changing temperature to -40
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 101 MB
+
+ 0.562141s wall, 0.515625s user + 0.046875s system = 0.562500s CPU (100.1%)
+
+
+tmcheck -par "ir_link_test_impl_1.par"  
+
+pnmainc -log pnmain "ir_link_test_impl_1_bit.tcl"
+Loading ir_link_test_impl_1.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2026.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Successfully read the udb in 0.00 s.
+
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Design:  ir_link_test
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+Constraint Summary
+   Total number of constraints: 4
+   Total number of constraints dropped: 0
+
+Successfully loaded device info and constraints in 0.00 s.
+
+Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
+
+
+
+BITGEN: Bitstream Generator Radiant Software (64-bit) 2026.1.0.37.0
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+Saving bit stream in "C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test/impl_1/ir_link_test_impl_1.bin".
+Bitstream generation complete!
+
+Total CPU Time: 0 secs 
+Total REAL Time: 4 secs 
+Peak Memory Usage: 119 MB
+
+**** CMD bit_generate - CPU/Elapsed: 0 secs / 4 secs , MEM/Increased: 61.637 Mb/ 0.266 Mb, DATE: 18:59:45 11/01/26
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /4 secs 

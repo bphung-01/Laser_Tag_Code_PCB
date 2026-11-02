@@ -66,6 +66,6 @@ module ir_link_test (
             light_timer <= light_timer - 1'b1;
     end
 
-    assign detected_n = (light_timer == 0);
+    assign detected_n = (light_timer != 0);
 
 endmodule

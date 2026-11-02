@@ -1,0 +1,3 @@
+ldc_set_location -site {19} [get_ports ir_rx_n]
+ldc_set_location -site {42} [get_ports detected_n]
+ldc_set_location -site {20} [get_ports ir_tx]

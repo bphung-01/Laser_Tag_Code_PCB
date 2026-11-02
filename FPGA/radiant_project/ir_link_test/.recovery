@@ -6,6 +6,9 @@
         <Source name="../../src/ir_link_test.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog" top_module="ir_link_test"/>
         </Source>
+        <Source name="constraints.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
         <Source name="source/impl_1.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>

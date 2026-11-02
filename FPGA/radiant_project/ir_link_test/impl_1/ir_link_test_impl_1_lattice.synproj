@@ -42,7 +42,6 @@
 # Source Files
 -sver "../../../src/ir_link_test.sv"
 -path ".."
--top ir_link_test
 # Output Configuration
 -udb "ir_link_test_impl_1_rtl.udb"
 -output_hdl "ir_link_test_impl_1.vm"
