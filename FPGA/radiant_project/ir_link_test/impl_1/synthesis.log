@@ -1,0 +1,124 @@
+Lattice Synthesis Engine launched.
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+
+###################### Device Information ######################
+----------------------------------------------------------------
+Lattice Family        | iCE40UP
+----------------------------------------------------------------
+Device                | iCE40UP5K
+----------------------------------------------------------------
+Package               | SG48
+----------------------------------------------------------------
+Performance Grade     | High-Performance_1.2V
+----------------------------------------------------------------
+################################################################
+
+####################### Device Resources #######################
+----------------------------------------------------------------
+Logic Cells           | 5280
+----------------------------------------------------------------
+RAM Blocks            | 30
+----------------------------------------------------------------
+DSP Blocks            | 8
+----------------------------------------------------------------
+PLLs                  | 1
+----------------------------------------------------------------
+I/O Pins              | 56
+----------------------------------------------------------------
+################################################################
+
+Resolving user-selected strategy settings...
+
+INFO <35001797> - synthesis: Use DCC Insertion disabled by default.
+
+###################### Strategy Settings #######################
+----------------------------------------------------------------
+Optimization Goal     | Area
+----------------------------------------------------------------
+Top-level Module Name | ir_link_test
+----------------------------------------------------------------
+Target Frequency      | 200.000 MHz
+----------------------------------------------------------------
+Maximum Fanout        | 1000
+----------------------------------------------------------------
+Timing Path Count     | 3
+----------------------------------------------------------------
+RAM Read/Write Check  | False
+----------------------------------------------------------------
+BRAM Utilization      | 100.0%
+----------------------------------------------------------------
+DSP Usage             | True
+----------------------------------------------------------------
+DSP Utilization       | 100.0%
+----------------------------------------------------------------
+FSM Encoding Style    | Auto
+----------------------------------------------------------------
+Resolve Mixed Drivers | False
+----------------------------------------------------------------
+Fix Gated Clocks      | True
+----------------------------------------------------------------
+Mux Style             | Auto
+----------------------------------------------------------------
+Use Carry Chain       | True
+----------------------------------------------------------------
+Carry Chain Length    | Infinite
+----------------------------------------------------------------
+Loop Limit            | 1950
+----------------------------------------------------------------
+Use I/O Insertion     | True
+----------------------------------------------------------------
+Use I/O Registers     | True
+----------------------------------------------------------------
+Resource Sharing      | True
+----------------------------------------------------------------
+Propagate Constants   | True
+----------------------------------------------------------------
+Remove Duplicate Reg  | True
+----------------------------------------------------------------
+Force GSR             | False
+----------------------------------------------------------------
+ROM Style             | Auto
+----------------------------------------------------------------
+RAM Style             | Auto
+----------------------------------------------------------------
+Remove LOC Properties | False
+----------------------------------------------------------------
+Partition Flow        | False
+----------------------------------------------------------------
+Use DCC Insertion     | None
+----------------------------------------------------------------
+################################################################
+
+
+The -comp option is TRUE.
+The -syn option is FALSE.
+
+Output HDL filename: ir_link_test_impl_1.vm
+-path . (searchpath added)
+-path .. (searchpath added)
+-path ../../../src (searchpath added)
+-path C:/lscc/radiant/2026.1/ispfpga/ice40tp/data (searchpath added)
+Mixed language design
+Verilog design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file: ../../../src/ir_link_test.sv
+VHDL library: pmi
+VHDL design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd
+
+Compiling design...
+
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\generic.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\simulation\verilog\iCE40UP\iCE40UP_sp.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v. VERI-1482
+Analyzing Verilog file ../../../src/ir_link_test.sv. VERI-1482
+Top module name (Verilog): ir_link_test
+INFO <35901018> - synthesis: ../../../src/ir_link_test.sv(1): compiling module ir_link_test. VERI-1018
+INFO <35901018> - synthesis: C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=2'b01). VERI-1018
+LSE: Compile Design done
+
