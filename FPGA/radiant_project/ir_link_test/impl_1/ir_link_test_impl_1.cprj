@@ -1,0 +1,8 @@
+-ver "C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd"
+-sver "C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/src/ir_link_test.sv"
+-path "C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test" "C:/Users/bphung/Documents/GitHub/Laser_Tag_Code_PCB/FPGA/radiant_project/ir_link_test"
+-top ir_link_test
+-isTop
+-a "iCE40UP"
+-t "iCE40UP5K"
