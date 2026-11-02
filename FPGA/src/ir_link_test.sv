@@ -1,12 +1,13 @@
 module ir_link_test (
-    output logic ir_tx,       // P20: to 100-ohm resistor and TN2106 gate
+    input  logic trigger_n,   // P23: onboard SW1, active low
     input  logic ir_rx_n,     // P19: TSOP4838 OUT, active low
-    output logic detected_n   // P42: onboard D6 LED, active low
+    output logic ir_tx,       // P20: TN2106 gate through 100 ohms
+    output logic detected_n   // P42: onboard D6
 );
 
     logic clk;
 
-    // E155 UPduino internal oscillator: 24 MHz with this divider.
+    // 24 MHz internal FPGA clock.
     HSOSC #(.CLKHF_DIV(2'b01)) oscillator (
         .CLKHFPU(1'b1),
         .CLKHFEN(1'b1),
@@ -26,28 +27,47 @@ module ir_link_test (
         end
     end
 
-    // Repeat every 100 ms. For the first 24 ms, send
-    // twenty 600-us bursts separated by 600-us gaps.
-    logic [21:0] frame_count = 0;
+    // Synchronize the pushbutton and detect each new press.
+    logic trigger_meta = 1;
+    logic trigger_sync = 1;
+    logic trigger_prev = 1;
+
+    always_ff @(posedge clk) begin
+        trigger_meta <= trigger_n;
+        trigger_sync <= trigger_meta;
+        trigger_prev <= trigger_sync;
+    end
+
+    logic new_press;
+    assign new_press = trigger_prev && !trigger_sync;
+
+    // A press sends 20 bursts. Each burst is 600 us on,
+    // followed by 600 us off: 24 ms total.
+    logic [19:0] tx_remaining = 0;
     logic [14:0] burst_count = 0;
 
     always_ff @(posedge clk) begin
-        if (frame_count == 2_399_999)
-            frame_count <= 0;
-        else
-            frame_count <= frame_count + 1'b1;
-
-        if (burst_count == 28_799)
+        if (tx_remaining == 0) begin
             burst_count <= 0;
-        else
-            burst_count <= burst_count + 1'b1;
+
+            if (new_press)
+                tx_remaining <= 576_000;
+        end else begin
+            tx_remaining <= tx_remaining - 1'b1;
+
+            if (burst_count == 28_799)
+                burst_count <= 0;
+            else
+                burst_count <= burst_count + 1'b1;
+        end
     end
 
-    assign ir_tx = (frame_count < 576_000) &&
+    // Send the carrier only during each burst.
+    assign ir_tx = (tx_remaining != 0) &&
                    (burst_count < 14_400) &&
                    carrier;
 
-    // Synchronize the receiver output before using it.
+    // Synchronize the IR receiver output.
     logic rx_meta = 1;
     logic rx_sync = 1;
 
@@ -56,7 +76,7 @@ module ir_link_test (
         rx_sync <= rx_meta;
     end
 
-    // Keep D6 lit for about 0.25 s after a detected burst.
+    // Hold the detection indicator for 0.25 seconds.
     logic [22:0] light_timer = 0;
 
     always_ff @(posedge clk) begin
@@ -66,6 +86,8 @@ module ir_link_test (
             light_timer <= light_timer - 1'b1;
     end
 
-    assign detected_n = (light_timer == 0);
+    // D6 appeared to light when its FPGA output was high
+    // in your first test, so drive it high on detection.
+    assign detected_n = (light_timer != 0);
 
 endmodule
