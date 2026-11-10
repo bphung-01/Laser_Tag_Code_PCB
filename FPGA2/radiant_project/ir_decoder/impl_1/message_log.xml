@@ -1,0 +1,1820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Synthesis">
+        <Message>
+            <ID>35001797</ID>
+            <Severity>1</Severity>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(1): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(2): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(45): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>RGB</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v</Navigation>
+            <Navigation>45</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(3): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3BZ.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3BZ.v(19): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>FD1P3BZ</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3BZ.v</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(4): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3DZ.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3DZ.v(19): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>FD1P3DZ</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3DZ.v</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(5): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3IZ.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3IZ.v(18): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>FD1P3IZ</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3IZ.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(6): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3JZ.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3JZ.v(18): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>FD1P3JZ</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3JZ.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(7): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v(12): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>IB</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(8): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OB.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OB.v(12): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>OB</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OB.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(9): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OBZ_B.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OBZ_B.v(14): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>OBZ_B</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OBZ_B.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(10): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v(30): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>IFD1P3AZ</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v</Navigation>
+            <Navigation>30</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(11): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OFD1P3AZ.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OFD1P3AZ.v(31): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>OFD1P3AZ</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OFD1P3AZ.v</Navigation>
+            <Navigation>31</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(12): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/PDP4K.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/PDP4K.v(143): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>PDP4K</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/PDP4K.v</Navigation>
+            <Navigation>143</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(13): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v(34): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>CCU2_B</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v</Navigation>
+            <Navigation>34</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(14): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v(92): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>SP256K</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v</Navigation>
+            <Navigation>92</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(15): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v(20): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>HSOSC</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(16): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v(16): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>LSOSC</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(17): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC1P8V.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC1P8V.v(24): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>HSOSC1P8V</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC1P8V.v</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(18): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC1P8V.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC1P8V.v(21): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>LSOSC1P8V</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC1P8V.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v(19): </Dynamic>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/iCE40UP_sp.v</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>128</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v(52): </Dynamic>
+            <Dynamic>module</Dynamic>
+            <Dynamic>RGB1P8V</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35901214</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v(11): </Dynamic>
+            <Dynamic>I</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(33): </Dynamic>
+            <Dynamic>TRIM9</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v(11): </Dynamic>
+            <Dynamic>I</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFER</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>FD1P3XZ</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFESR</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFESS</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFES</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFE</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFNER</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>INV</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFNESR</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFNESS</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFNES</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFNE</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFNR</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFNSR</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFNSS</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFNS</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFN</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFR</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFSR</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFSS</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFFS</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_DFF</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_IO</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>BB_B</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_LUT4</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>LUT4</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_MAC16</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>MAC16</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM1024x4NRNW</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>EBR_B</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM1024x4NR</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM1024x4NW</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM1024x4</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM2048x2NRNW</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM2048x2NR</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM2048x2NW</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM2048x2</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM256x16NRNW</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM256x16NR</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM256x16NW</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM256x16</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM512x8NRNW</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM512x8NR</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM512x8NW</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v(1724): </Dynamic>
+            <Dynamic>SB_RAM512x8</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/legacy.v</Navigation>
+            <Navigation>1724</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(2): </Dynamic>
+            <Dynamic>RGB</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(33): </Dynamic>
+            <Dynamic>RGB_CORE</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v(41): </Dynamic>
+            <Dynamic>OB_RGB</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB.v</Navigation>
+            <Navigation>41</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3BZ.v(2): </Dynamic>
+            <Dynamic>FD1P3BZ</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3BZ.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3DZ.v(2): </Dynamic>
+            <Dynamic>FD1P3DZ</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3DZ.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3IZ.v(2): </Dynamic>
+            <Dynamic>FD1P3IZ</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3IZ.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3JZ.v(2): </Dynamic>
+            <Dynamic>FD1P3JZ</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/FD1P3JZ.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v(2): </Dynamic>
+            <Dynamic>IB</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IB.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OB.v(2): </Dynamic>
+            <Dynamic>OB</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OB.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OBZ_B.v(2): </Dynamic>
+            <Dynamic>OBZ_B</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OBZ_B.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v(2): </Dynamic>
+            <Dynamic>IFD1P3AZ</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v(15): </Dynamic>
+            <Dynamic>IOL_B</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/IFD1P3AZ.v</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OFD1P3AZ.v(2): </Dynamic>
+            <Dynamic>OFD1P3AZ</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/OFD1P3AZ.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/PDP4K.v(2): </Dynamic>
+            <Dynamic>PDP4K</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/PDP4K.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v(2): </Dynamic>
+            <Dynamic>CCU2_B</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v(28): </Dynamic>
+            <Dynamic>FA2</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/CCU2_B.v</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v(2): </Dynamic>
+            <Dynamic>SP256K</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v(28): </Dynamic>
+            <Dynamic>VFB_B</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/SP256K.v</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v(2): </Dynamic>
+            <Dynamic>HSOSC</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v(16): </Dynamic>
+            <Dynamic>HSOSC_CORE</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC.v</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v(2): </Dynamic>
+            <Dynamic>LSOSC</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911026</ID>
+            <Severity>16</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v(13): </Dynamic>
+            <Dynamic>LSOSC_CORE</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC1P8V.v(2): </Dynamic>
+            <Dynamic>HSOSC1P8V</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/HSOSC1P8V.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC1P8V.v(2): </Dynamic>
+            <Dynamic>LSOSC1P8V</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/LSOSC1P8V.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911012</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v(2): </Dynamic>
+            <Dynamic>RGB1P8V</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35911015</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v(2): </Dynamic>
+            <Dynamic>RGB1P8V</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/simulation/verilog/iCE40UP/RGB1P8V.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/standard.vhd(9): </Dynamic>
+            <Dynamic>standard</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/standard.vhd</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/std_1164.vhd(15): </Dynamic>
+            <Dynamic>std_logic_1164</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/std_1164.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/std_1164.vhd(178): </Dynamic>
+            <Dynamic>std_logic_1164</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/std_1164.vhd</Navigation>
+            <Navigation>178</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/mgc_qsim.vhd(18): </Dynamic>
+            <Dynamic>qsim_logic</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/mgc_qsim.vhd</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/mgc_qsim.vhd(753): </Dynamic>
+            <Dynamic>qsim_logic</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/mgc_qsim.vhd</Navigation>
+            <Navigation>753</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/numeric_bit.vhd(54): </Dynamic>
+            <Dynamic>numeric_bit</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/numeric_bit.vhd</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/numeric_bit.vhd(834): </Dynamic>
+            <Dynamic>numeric_bit</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/numeric_bit.vhd</Navigation>
+            <Navigation>834</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/numeric_std.vhd(57): </Dynamic>
+            <Dynamic>numeric_std</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/numeric_std.vhd</Navigation>
+            <Navigation>57</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/numeric_std.vhd(874): </Dynamic>
+            <Dynamic>numeric_std</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/numeric_std.vhd</Navigation>
+            <Navigation>874</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/textio.vhd(13): </Dynamic>
+            <Dynamic>textio</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/textio.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/textio.vhd(114): </Dynamic>
+            <Dynamic>textio</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/textio.vhd</Navigation>
+            <Navigation>114</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/std_logic_textio.vhd(26): </Dynamic>
+            <Dynamic>std_logic_textio</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/std_logic_textio.vhd</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/std_logic_textio.vhd(72): </Dynamic>
+            <Dynamic>std_logic_textio</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/std_logic_textio.vhd</Navigation>
+            <Navigation>72</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_misc.vhd(30): </Dynamic>
+            <Dynamic>std_logic_misc</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_misc.vhd</Navigation>
+            <Navigation>30</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_misc.vhd(182): </Dynamic>
+            <Dynamic>std_logic_misc</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_misc.vhd</Navigation>
+            <Navigation>182</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>./.__tmp_vxr_0_(56): </Dynamic>
+            <Dynamic>math_real</Dynamic>
+            <Navigation>./.__tmp_vxr_0_</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>1</Severity>
+            <Dynamic>./.__tmp_vxr_0_(685): </Dynamic>
+            <Dynamic>math_real</Dynamic>
+            <Navigation>./.__tmp_vxr_0_</Navigation>
+            <Navigation>685</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/mixed_lang_vltype.vhd(9): </Dynamic>
+            <Dynamic>vl_types</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/mixed_lang_vltype.vhd</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/mixed_lang_vltype.vhd(88): </Dynamic>
+            <Dynamic>vl_types</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/mixed_lang_vltype.vhd</Navigation>
+            <Navigation>88</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_arit.vhd(25): </Dynamic>
+            <Dynamic>std_logic_arith</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_arit.vhd</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_arit.vhd(206): </Dynamic>
+            <Dynamic>std_logic_arith</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_arit.vhd</Navigation>
+            <Navigation>206</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_attr.vhd(39): </Dynamic>
+            <Dynamic>attributes</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_attr.vhd</Navigation>
+            <Navigation>39</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_sign.vhd(35): </Dynamic>
+            <Dynamic>std_logic_signed</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_sign.vhd</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_sign.vhd(96): </Dynamic>
+            <Dynamic>std_logic_signed</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_sign.vhd</Navigation>
+            <Navigation>96</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_unsi.vhd(35): </Dynamic>
+            <Dynamic>std_logic_unsigned</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_unsi.vhd</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_unsi.vhd(94): </Dynamic>
+            <Dynamic>std_logic_unsigned</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/syn_unsi.vhd</Navigation>
+            <Navigation>94</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/synthesis/vhdl/iCE40UP.vhd(4): </Dynamic>
+            <Dynamic>components</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/synthesis/vhdl/iCE40UP.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/synattr.vhd(50): </Dynamic>
+            <Dynamic>attributes</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/vhdl_packages/synattr.vhd</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(1): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_addsub.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_addsub.v(40): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_addsub.v</Navigation>
+            <Navigation>40</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(2): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_add.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_add.v(50): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/adder/rtl/lscc_adder.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_add.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(3): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_complex_mult.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_complex_mult.v(52): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_complex_mult.v</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(4): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_counter.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_counter.v(39): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/counter/rtl/lscc_cntr.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_counter.v</Navigation>
+            <Navigation>39</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(5): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_fifo.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_fifo.v(44): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_fifo.v</Navigation>
+            <Navigation>44</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(6): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_fifo_dc.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_fifo_dc.v(47): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_fifo_dc.v</Navigation>
+            <Navigation>47</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_fifo_dc.v(48): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_fifo_dc.v</Navigation>
+            <Navigation>48</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(128): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_distributed_ram.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>128</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(129): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_ecc.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>129</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(130): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_flag_and_cnts_logic.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>130</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(131): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_gray_reg.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>131</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(132): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_gray_synchronizer.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>132</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(133): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_prim.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>133</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(134): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_rd_ctrl_logic.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>134</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(135): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_rd_output_logic.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>135</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(136): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_ring_counter.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>136</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(137): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_wr_ctrl_logic.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>137</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(138): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(139): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_prim_gen.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>139</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(140): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_rd_ctrl_logic.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>140</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v(141): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_wr_ctrl_logic.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v</Navigation>
+            <Navigation>141</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(7): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_mac.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_mac.v(52): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_mac.v</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(8): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_multaddsubsum.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_multaddsubsum.v(53): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_multaddsubsum.v</Navigation>
+            <Navigation>53</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(9): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_multaddsub.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_multaddsub.v(52): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_multaddsub.v</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(10): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_mult.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_mult.v(51): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_mult.v</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(11): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dp.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dp.v(48): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dp.v</Navigation>
+            <Navigation>48</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dp.v(49): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dp.v</Navigation>
+            <Navigation>49</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v(364): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v</Navigation>
+            <Navigation>364</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(67): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_behavioral.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v</Navigation>
+            <Navigation>67</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(70): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_lut_decode.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v</Navigation>
+            <Navigation>70</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(507): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_functions.vh</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v</Navigation>
+            <Navigation>507</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(649): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_functions.vh</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v</Navigation>
+            <Navigation>649</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(1630): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_functions.vh</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v</Navigation>
+            <Navigation>1630</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(2686): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_functions.vh</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v</Navigation>
+            <Navigation>2686</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v(5122): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_functions.vh</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v</Navigation>
+            <Navigation>5122</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(12): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dq.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dq.v(45): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dq.v</Navigation>
+            <Navigation>45</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dq.v(46): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dq.v</Navigation>
+            <Navigation>46</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(13): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_rom.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_rom.v(45): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/rom/rtl/lscc_rom.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_rom.v</Navigation>
+            <Navigation>45</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(14): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_sub.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_sub.v(50): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_sub.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(15): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dp_be.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dp_be.v(49): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dp_be.v</Navigation>
+            <Navigation>49</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dp_be.v(50): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dp_be.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v(364): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v</Navigation>
+            <Navigation>364</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(16): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dq_be.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dq_be.v(45): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dq_be.v</Navigation>
+            <Navigation>45</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dq_be.v(46): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ram_dq_be.v</Navigation>
+            <Navigation>46</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v(17): </Dynamic>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_dsp.v</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.v</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.vhd(4): </Dynamic>
+            <Dynamic>components</Dynamic>
+            <Navigation>c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>1</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>C:/Users/jgsen/Downloads/Laser Tag Code &amp; PCB/Laser_Tag_Code_PCB/FPGA2/radiant_project/ir_decoder/impl_1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(29): </Dynamic>
+            <Dynamic>ir_test_top</Dynamic>
+            <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv</Navigation>
+            <Navigation>29</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): </Dynamic>
+            <Dynamic>HSOSC(CLKHF_DIV=2'b01)</Dynamic>
+            <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
+            <Navigation>756</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_encoder.sv(15): </Dynamic>
+            <Dynamic>ir_encoder</Dynamic>
+            <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_encoder.sv</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_encoder.sv(70): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>17</Dynamic>
+            <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_encoder.sv</Navigation>
+            <Navigation>70</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_encoder.sv(82): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_encoder.sv</Navigation>
+            <Navigation>82</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_encoder.sv(86): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>17</Dynamic>
+            <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_encoder.sv</Navigation>
+            <Navigation>86</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_encoder.sv(108): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>9</Dynamic>
+            <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_encoder.sv</Navigation>
+            <Navigation>108</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_decoder.sv(17): </Dynamic>
+            <Dynamic>ir_decoder</Dynamic>
+            <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_decoder.sv</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_decoder.sv(57): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>17</Dynamic>
+            <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_decoder.sv</Navigation>
+            <Navigation>57</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_decoder.sv(109): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_decoder.sv</Navigation>
+            <Navigation>109</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(94): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>23</Dynamic>
+            <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv</Navigation>
+            <Navigation>94</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(97): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>23</Dynamic>
+            <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv</Navigation>
+            <Navigation>97</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(100): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>23</Dynamic>
+            <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv</Navigation>
+            <Navigation>100</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>1</Severity>
+            <Dynamic>\encoder/state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002061</ID>
+            <Severity>1</Severity>
+            <Dynamic>fire_n</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002061</ID>
+            <Severity>1</Severity>
+            <Dynamic>reset_n</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002061</ID>
+            <Severity>1</Severity>
+            <Dynamic>player_sw_n</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002061</ID>
+            <Severity>1</Severity>
+            <Dynamic>ir_rx_n</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002062</ID>
+            <Severity>16</Severity>
+            <Dynamic>ir_tx</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002062</ID>
+            <Severity>16</Severity>
+            <Dynamic>led_p1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002062</ID>
+            <Severity>16</Severity>
+            <Dynamic>led_p2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002062</ID>
+            <Severity>16</Severity>
+            <Dynamic>led_err</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002039</ID>
+            <Severity>1</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>
