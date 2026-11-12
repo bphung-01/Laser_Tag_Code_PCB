@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Nov  9 22:31:29 2026
+Wed Nov 11 15:48:35 2026
 
 
 Command Line:  C:\lscc\radiant\2025.2.1\ispfpga\bin\nt64\synthesis.exe -f C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/radiant_project/ir_decoder/impl_1/ir_decoder_impl_1_lattice.synproj -logfile ir_decoder_impl_1_lattice.srp -gui -msgset C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/radiant_project/ir_decoder/promote.xml 
@@ -432,8 +432,9 @@ INFO <35921014> - synthesis: c:/lscc/radiant/2025.2.1/ip/pmi/pmi_ice40up.vhd(4):
 INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/radiant_project/ir_decoder/impl_1". VHDL-1504
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): ir_test_top
-INFO <35901018> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(29): compiling module ir_test_top. VERI-1018
+INFO <35901018> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(40): compiling module ir_test_top. VERI-1018
 INFO <35901018> - synthesis: C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=2'b01). VERI-1018
+WARNING <35901209> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(95): expression size 32 truncated to fit in target size 19. VERI-1209
 INFO <35901018> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_encoder.sv(15): compiling module ir_encoder. VERI-1018
 WARNING <35901209> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_encoder.sv(70): expression size 32 truncated to fit in target size 17. VERI-1209
 WARNING <35901209> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_encoder.sv(82): expression size 32 truncated to fit in target size 4. VERI-1209
@@ -442,9 +443,9 @@ WARNING <35901209> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/la
 INFO <35901018> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_decoder.sv(17): compiling module ir_decoder. VERI-1018
 WARNING <35901209> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_decoder.sv(57): expression size 32 truncated to fit in target size 17. VERI-1209
 WARNING <35901209> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_decoder.sv(109): expression size 32 truncated to fit in target size 4. VERI-1209
-WARNING <35901209> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(94): expression size 32 truncated to fit in target size 23. VERI-1209
-WARNING <35901209> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(97): expression size 32 truncated to fit in target size 23. VERI-1209
-WARNING <35901209> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(100): expression size 32 truncated to fit in target size 23. VERI-1209
+WARNING <35901209> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(130): expression size 32 truncated to fit in target size 23. VERI-1209
+WARNING <35901209> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(133): expression size 32 truncated to fit in target size 23. VERI-1209
+WARNING <35901209> - synthesis: c:/users/jgsen/downloads/laser tag code & pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(136): expression size 32 truncated to fit in target size 23. VERI-1209
 
 <A name="lse_parameter"></A><B><U><big>Parameter Setting</big></U></B>
 
@@ -483,22 +484,24 @@ WARNING <35002062> - synthesis: Port rejected for I/O register mapping: ir_tx
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led_p1
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led_p2
 WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led_err
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: hit_irq
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: fire_irq
 INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
 
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (ir_test_top)######################
-Number of register bits => 150 of 5280 (2 % )
-CCU2 => 59
-FD1P3XZ => 150
+Number of register bits => 170 of 5280 (3 % )
+CCU2 => 69
+FD1P3XZ => 170
 HSOSC_CORE => 1
 IB => 4
 IOL_B => 4
-LUT4 => 201
-OB => 4
+LUT4 => 212
+OB => 6
 ################### End Area Report ##################
-Number of odd-length carry chains : 6
+Number of odd-length carry chains : 7
 Number of even-length carry chains : 0
 
 
@@ -512,16 +515,16 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : reset_sync_N_145, loads : 74
-  Net : encoder/n1671, loads : 25
-  Net : decoder/n116, loads : 25
-  Net : n1934, loads : 23
-  Net : n2916, loads : 22
-  Net : encoder/n561, loads : 22
-  Net : reset_sync, loads : 21
-  Net : encoder/n33, loads : 21
-  Net : n1967, loads : 20
+  Net : reset_sync_N_165, loads : 75
+  Net : encoder/n33, loads : 27
+  Net : n932, loads : 26
+  Net : encoder/n1890, loads : 25
+  Net : n2127, loads : 24
+  Net : n2164, loads : 23
+  Net : reset_sync, loads : 22
+  Net : n2174, loads : 20
   Net : decoder/n283, loads : 20
+  Net : decoder/n2337, loads : 20
 ################### End Clock Report ##################
 
 
@@ -533,13 +536,13 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 94 MB
+Peak Memory Usage: 95 MB
 
 --------------------------------------------------------------
 Total CPU Time: 38 secs 
 Total REAL Time: 41 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: a40e8d7f38ac87ccffd5304b922a9170c1b09e5a
+Checksum -- synthesis -- netlist: d07681359a8b2b2b55e9fcab1a7b68fd1400d88
 
 
 

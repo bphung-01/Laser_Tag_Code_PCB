@@ -6,13 +6,15 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Mon Nov  9 22:38:24 2026
+Wed Nov 11 15:51:12 2026
 
 Pinout by Port Name:
 +-------------+----------+--------------+-------+------------------------------------------+
 | Port Name   | Pin/Bank | Buffer Type  | Site  | Properties                               |
 +-------------+----------+--------------+-------+------------------------------------------+
+| fire_irq    | 12/1     | LVCMOS33_OUT | PL19A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | fire_n      | 34/0     | LVCMOS33_IN  | PR14B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| hit_irq     | 27/0     | LVCMOS33_OUT | PR19B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | ir_rx_n     | 19/1     | LVCMOS33_IN  | PL22B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
 | ir_tx       | 20/1     | LVCMOS33_OUT | PL20B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | led_err     | 28/0     | LVCMOS33_OUT | PR18A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
@@ -41,7 +43,7 @@ Pinout by Pin Number:
 | 9/1      |     unused, PULL:UP |            |              | PL16A |                  |
 | 10/1     |     unused, PULL:UP |            |              | PL17A |                  |
 | 11/1     |     unused, PULL:UP |            |              | PL18A |                  |
-| 12/1     |     unused, PULL:UP |            |              | PL19A |                  |
+| 12/1     | fire_irq            | LOCATED    | LVCMOS33_OUT | PL19A |                  |
 | 13/1     |     unused, PULL:UP |            |              | PL20A |                  |
 | 14/1     |     unused, PULL:UP |            |              | PL24A | SPI_SO           |
 | 15/1     |     unused, PULL:UP |            |              | PL25A | SPISCK           |
@@ -54,7 +56,7 @@ Pinout by Pin Number:
 | 23/0     |     unused, PULL:UP |            |              | PR20A |                  |
 | 25/0     |     unused, PULL:UP |            |              | PR20B |                  |
 | 26/0     |     unused, PULL:UP |            |              | PR19A |                  |
-| 27/0     |     unused, PULL:UP |            |              | PR19B |                  |
+| 27/0     | hit_irq             | LOCATED    | LVCMOS33_OUT | PR19B |                  |
 | 28/0     | led_err             | LOCATED    | LVCMOS33_OUT | PR18A |                  |
 | 31/0     | player_sw_n         | LOCATED    | LVCMOS33_IN  | PR17B |                  |
 | 32/0     |     unused, PULL:UP |            |              | PR17A |                  |
@@ -95,7 +97,9 @@ Pinout by Pin Number:
 
 Locate Constraints for each Pin: 
 
+ldc_set_location -site {12} [ get_ports {fire_irq} ]
 ldc_set_location -site {34} [ get_ports {fire_n} ]
+ldc_set_location -site {27} [ get_ports {hit_irq} ]
 ldc_set_location -site {19} [ get_ports {ir_rx_n} ]
 ldc_set_location -site {20} [ get_ports {ir_tx} ]
 ldc_set_location -site {28} [ get_ports {led_err} ]
@@ -110,5 +114,5 @@ ldc_set_location -site {43} [ get_ports {reset_n} ]
 
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
-Mon Nov  9 22:38:24 2026
+Wed Nov 11 15:51:12 2026
 

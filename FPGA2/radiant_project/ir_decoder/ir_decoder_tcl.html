@@ -40,7 +40,31 @@ if (a)
 <BODY>
 
 <DIV id="content" onclick="hideTocList()"><PRE>
+<A name="pn261110105648"></A><B><U><big>pn261110105648</big></U></B>
+#Start recording tcl command: 11/9/2026 18:59:43
+#Project Location: C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/radiant_project/ir_decoder; Project name: ir_decoder
+prj_create -name "ir_decoder" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_add_source "C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/ir_encoder.sv" "C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/ir_decoder.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/ir_test_top.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/radiant_project/ir_decoder/impl1.pdc"
+prj_enable_source "C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/radiant_project/ir_decoder/impl1.pdc"
+prj_run Export -impl impl_1
+#Stop recording: 11/10/2026 10:56:48
+
+
+
 </PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#pn261110105648>pn261110105648</A></LI>
+</UL>
+</DIV>
 
 <button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
 <script type="text/javascript">

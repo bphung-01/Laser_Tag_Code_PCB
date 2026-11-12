@@ -1,36 +1,36 @@
 ----------------------------------------------------------------------
 Report for cell ir_test_top.TECH
-Register bits:  150 of 5280 (2.841%)
-I/O cells:      8
+Register bits:  170 of 5280 (3.220%)
+I/O cells:      10
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        59          100.0
-                            FD1P3XZ       150          100.0
+                               CCU2        69          100.0
+                            FD1P3XZ       170          100.0
                          HSOSC_CORE         1          100.0
                                  IB         4          100.0
                               IOL_B         4          100.0
-                               LUT4       201          100.0
-                                 OB         4          100.0
+                               LUT4       212          100.0
+                                 OB         6          100.0
 SUB MODULES
                          ir_decoder         1
                          ir_encoder         1
-                              TOTAL       425
-----------------------------------------------------------------------
-Report for cell ir_encoder.v1
-Instance Path : encoder
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        14           23.7
-                            FD1P3XZ        43           28.7
-                               LUT4        65           32.3
-                              TOTAL       122
+                              TOTAL       468
 ----------------------------------------------------------------------
 Report for cell ir_decoder.v1
 Instance Path : decoder
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2         9           15.3
-                            FD1P3XZ        34           22.7
+                                FA2         9           13.0
+                            FD1P3XZ        34           20.0
                               IOL_B         1           25.0
-                               LUT4        66           32.8
-                              TOTAL       110
+                               LUT4        61           28.8
+                              TOTAL       105
+----------------------------------------------------------------------
+Report for cell ir_encoder.v1
+Instance Path : encoder
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        14           20.3
+                            FD1P3XZ        43           25.3
+                               LUT4        70           33.0
+                              TOTAL       127

@@ -1656,10 +1656,10 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(29): </Dynamic>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(40): </Dynamic>
             <Dynamic>ir_test_top</Dynamic>
             <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv</Navigation>
-            <Navigation>29</Navigation>
+            <Navigation>40</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -1668,6 +1668,15 @@
             <Dynamic>HSOSC(CLKHF_DIV=2'b01)</Dynamic>
             <Navigation>C:/lscc/radiant/2025.2.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
             <Navigation>756</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(95): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>19</Dynamic>
+            <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv</Navigation>
+            <Navigation>95</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -1742,29 +1751,29 @@
         <Message>
             <ID>35901209</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(94): </Dynamic>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(130): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>23</Dynamic>
             <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv</Navigation>
-            <Navigation>94</Navigation>
+            <Navigation>130</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(97): </Dynamic>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(133): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>23</Dynamic>
             <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv</Navigation>
-            <Navigation>97</Navigation>
+            <Navigation>133</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(100): </Dynamic>
+            <Dynamic>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv(136): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>23</Dynamic>
             <Navigation>c:/users/jgsen/downloads/laser tag code &amp; pcb/laser_tag_code_pcb/fpga2/ir_test_top.sv</Navigation>
-            <Navigation>100</Navigation>
+            <Navigation>136</Navigation>
         </Message>
         <Message>
             <ID>35001774</ID>
@@ -1811,6 +1820,16 @@
             <ID>35002062</ID>
             <Severity>16</Severity>
             <Dynamic>led_err</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002062</ID>
+            <Severity>16</Severity>
+            <Dynamic>hit_irq</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002062</ID>
+            <Severity>16</Severity>
+            <Dynamic>fire_irq</Dynamic>
         </Message>
         <Message>
             <ID>35002039</ID>

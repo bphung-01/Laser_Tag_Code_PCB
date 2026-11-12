@@ -4,33 +4,33 @@ Report for cell ir_test_top
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       4.00        100.0
-                                  LUT4	        328        100.0
-                               LUTGATE	        210        100.0
-                                LUTCCU	        118        100.0
+                                  LUT4	        360        100.0
+                               LUTGATE	        222        100.0
+                                LUTCCU	        138        100.0
                                  IOREG	          4        100.0
-                                 IOBUF	          8        100.0
-                                PFUREG	        150        100.0
+                                 IOBUF	         10        100.0
+                                PFUREG	        170        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                            ir_decoder	          1        24.7
-                            ir_encoder	          1        25.6
----------------------------------------------------
-Report for cell ir_encoder
-   Instance path: ir_test_top/encoder
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         84        25.6
-                               LUTGATE	         56        26.7
-                                LUTCCU	         28        23.7
-                                PFUREG	         43        28.7
+                            ir_decoder	          1        20.8
+                            ir_encoder	          1        25.8
 ---------------------------------------------------
 Report for cell ir_decoder
    Instance path: ir_test_top/decoder
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       1.00        25.0
-                                  LUT4	         81        24.7
-                               LUTGATE	         63        30.0
-                                LUTCCU	         18        15.3
+                                  LUT4	         75        20.8
+                               LUTGATE	         57        25.7
+                                LUTCCU	         18        13.0
                                  IOREG	          1        25.0
-                                PFUREG	         34        22.7
+                                PFUREG	         34        20.0
+---------------------------------------------------
+Report for cell ir_encoder
+   Instance path: ir_test_top/encoder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         93        25.8
+                               LUTGATE	         65        29.3
+                                LUTCCU	         28        20.3
+                                PFUREG	         43        25.3
