@@ -3,34 +3,45 @@ Report for cell ir_test_top
    Instance path: ir_test_top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOLGC	       4.00        100.0
-                                  LUT4	        360        100.0
-                               LUTGATE	        222        100.0
-                                LUTCCU	        138        100.0
-                                 IOREG	          4        100.0
-                                 IOBUF	         10        100.0
-                                PFUREG	        170        100.0
+                                 IOLGC	       8.00        100.0
+                                  LUT4	        460        100.0
+                               LUTGATE	        306        100.0
+                                LUTCCU	        154        100.0
+                                 IOREG	          8        100.0
+                                 IOBUF	         15        100.0
+                                PFUREG	        221        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                            ir_decoder	          1        20.8
-                            ir_encoder	          1        25.8
----------------------------------------------------
-Report for cell ir_decoder
-   Instance path: ir_test_top/decoder
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                 IOLGC	       1.00        25.0
-                                  LUT4	         75        20.8
-                               LUTGATE	         57        25.7
-                                LUTCCU	         18        13.0
-                                 IOREG	          1        25.0
-                                PFUREG	         34        20.0
+                            ir_decoder	          1        18.5
+                            ir_encoder	          1        18.7
+                               mcu_spi	          1         4.1
 ---------------------------------------------------
 Report for cell ir_encoder
    Instance path: ir_test_top/encoder
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         93        25.8
-                               LUTGATE	         65        29.3
-                                LUTCCU	         28        20.3
-                                PFUREG	         43        25.3
+                                  LUT4	         86        18.7
+                               LUTGATE	         58        19.0
+                                LUTCCU	         28        18.2
+                                PFUREG	         43        19.5
+---------------------------------------------------
+Report for cell mcu_spi
+   Instance path: ir_test_top/spi
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       3.00        37.5
+                                  LUT4	         19         4.1
+                               LUTGATE	         19         6.2
+                                 IOREG	          3        37.5
+                                PFUREG	         32        14.5
+---------------------------------------------------
+Report for cell ir_decoder
+   Instance path: ir_test_top/decoder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       1.00        12.5
+                                  LUT4	         85        18.5
+                               LUTGATE	         67        21.9
+                                LUTCCU	         18        11.7
+                                 IOREG	          1        12.5
+                                PFUREG	         37        16.7

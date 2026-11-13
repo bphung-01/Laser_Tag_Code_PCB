@@ -46,6 +46,7 @@
 -sver "C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/ir_encoder.sv"
 "C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/ir_decoder.sv"
 "C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/ir_test_top.sv"
+"C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/mcu_spi.sv"
 
 
 -path "C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/radiant_project/ir_decoder"

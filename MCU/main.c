@@ -1,32 +1,38 @@
 // main.c
-// Laser tag MCU: play a sound when the player shoots or gets hit.
+// Laser tag MCU: plays a sound when this unit fires or gets hit.
+// The FPGA reports both events on their own interrupt lines.
 //
-// Wiring (E155 FA23 Development Board v4):
-//   PA6  <- FPGA P27 hit_irq   through SW7 switch 4 (turn ON). D4 lights on a hit.
-//   PB4  <- FPGA P12 fire_irq  through SW7 switch 7 (turn ON).
-//   PA5  -> DAC audio out      -> 10 uF -> volume pot -> LM386 pin 3
-//                              SW7 switch 3 must be OFF (it ties PA5 to FPGA P26)
-//   PA7  <- SW3 push button    press to play the hit sound without the FPGA
-//   PB3  -> LD3 / D5 LED       blinks while the program runs
-//                              (SW7 switch 8 should be OFF)
+// Pin plan (E155 FA23 Development Board v4, SW7 = MCU <-> FPGA bridges):
+//   SW7 1  PA10 <-> P23   USART1 RX  (ESP8266)         ON or OFF (FPGA ignores P23)
+//   SW7 2  PA9  <-> P25   USART1 TX  (ESP8266)         ON or OFF (FPGA ignores P25)
+//   SW7 3  PA5  <-> P26   DAC audio out                OFF
+//   SW7 4  PA6  <-  P27   HIT interrupt (lights D4)    ON
+//   SW7 5  PA11  -> P20   SPI CS   (for later)         ON
+//   SW7 6  PB5   -> P10   SPI MOSI (for later)         ON
+//   SW7 7  PB4  <-  P12   SPI MISO (for later)         ON
+//   SW7 8  PB3   -> P21   SPI SCK  (for later)         ON
+//   PB0  <- FPGA P18      FIRE interrupt               jumper wire
+//   PA5  -> DAC audio  -> 10 uF -> volume pot -> LM386 pin 3
+//   PA9  -> USART1 TX, PA10 <- USART1 RX, 115200 baud (ESP8266 later; for now
+//           event messages you can watch with a 3.3 V USB-serial adapter)
+//   PA7  <- SW3 push button: plays the hit sound (speaker test)
+//   PB6, PB7: leave unconnected (Nucleo solder bridges tie them to PA6, PA5)
 //
-// The FPGA holds hit_irq high for 0.25 s after a good packet, and fire_irq
-// high while it sends a packet. A rising edge on either one causes an EXTI
-// interrupt, and the main loop plays the matching sound.
+// FIRE (PB0) rising edge: this unit just fired -> shot sound.
+// HIT  (PA6) rising edge: this unit got hit    -> hit sound.
+// The FPGA decides what counts as a hit: only the other player's shots, or
+// every shot (including your own) when SW6 switch 1 is ON (test mode).
 //
 // Which sound wins: a shot always plays right away. A hit that arrives while
-// the shot sound is playing waits for it to finish (when you shoot your own
-// receiver, the hit comes ~14 ms after the shot, and you'd never hear the
-// shot otherwise).
+// the shot sound is playing waits for it to finish.
 
 #include "STM32L432KC.h"
 #include "audio.h"
+#include "fpga.h"
 #include "hit_sound.h"
 #include "shot_sound.h"
 
-// 1 = play tune.h over and over (speaker/amp test). Hits and SW3 still play
-//     the hit sound; the tune starts again when it finishes.
-// 0 = normal: silent until a hit.
+// 1 = play tune.h over and over (speaker/amp test).
 #define PLAY_TUNE_ON_REPEAT 0
 
 #if HIT_SOUND_RATE != AUDIO_SAMPLE_RATE
@@ -38,120 +44,99 @@
 
 #if PLAY_TUNE_ON_REPEAT
 #include "tune.h"   // 110 KB of flash, so only pulled in when used
-#if TUNE_RATE != AUDIO_SAMPLE_RATE
-#error "tune.h sample rate doesn't match AUDIO_SAMPLE_RATE; re-export at 8000 Hz"
-#endif
 #endif
 
-#define HIT_PIN       PA6
-#define FIRE_PIN      PB4
 #define TEST_BTN_PIN  PA7
-#define HEARTBEAT_PIN PB3   // Nucleo green LED LD3 and dev board D5
+#define BAUD_RATE     115200
 
-static volatile int hit_pending  = 0;
-static volatile int fire_pending = 0;
+///////////////////////////////////////////////////////////////////////////////
+// 1 ms tick (SysTick) for debouncing and, later, game timing
+///////////////////////////////////////////////////////////////////////////////
 
-static void initFpgaInterrupts(void) {
-    gpioEnable(GPIO_PORT_A);
-    gpioEnable(GPIO_PORT_B);
-    RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
+static volatile uint32_t ms_ticks = 0;
 
-    // ---- Hit: PA6 -> EXTI line 6, rising edge ----
-    pinMode(HIT_PIN, GPIO_INPUT);
-    pinResistor(HIT_PIN, GPIO_PULL_DOWN);   // stays low if SW7 switch 4 is OFF
-    SYSCFG->EXTICR[1] &= ~SYSCFG_EXTICR2_EXTI6;   // 000 = port A
-    EXTI->RTSR1 |= EXTI_RTSR1_RT6;
-    EXTI->FTSR1 &= ~EXTI_FTSR1_FT6;
-    EXTI->PR1    = EXTI_PR1_PIF6;                 // clear anything stale
-    EXTI->IMR1  |= EXTI_IMR1_IM6;
-
-    // ---- Shot: PB4 -> EXTI line 4, rising edge ----
-    pinMode(FIRE_PIN, GPIO_INPUT);
-    pinResistor(FIRE_PIN, GPIO_PULL_DOWN);  // stays low if SW7 switch 7 is OFF
-    SYSCFG->EXTICR[1] = (SYSCFG->EXTICR[1] & ~SYSCFG_EXTICR2_EXTI4)
-                      | SYSCFG_EXTICR2_EXTI4_PB;  // 001 = port B
-    EXTI->RTSR1 |= EXTI_RTSR1_RT4;
-    EXTI->FTSR1 &= ~EXTI_FTSR1_FT4;
-    EXTI->PR1    = EXTI_PR1_PIF4;
-    EXTI->IMR1  |= EXTI_IMR1_IM4;
-
-    NVIC_SetPriority(EXTI9_5_IRQn, 1);
-    NVIC_EnableIRQ(EXTI9_5_IRQn);
-    NVIC_SetPriority(EXTI4_IRQn, 1);
-    NVIC_EnableIRQ(EXTI4_IRQn);
+void SysTick_Handler(void) {
+    ms_ticks++;
 }
 
-void EXTI9_5_IRQHandler(void) {
-    if (EXTI->PR1 & EXTI_PR1_PIF6) {
-        EXTI->PR1 = EXTI_PR1_PIF6;   // write 1 to clear
-        hit_pending = 1;
-    }
-}
+///////////////////////////////////////////////////////////////////////////////
+// Serial log
+///////////////////////////////////////////////////////////////////////////////
 
-void EXTI4_IRQHandler(void) {
-    if (EXTI->PR1 & EXTI_PR1_PIF4) {
-        EXTI->PR1 = EXTI_PR1_PIF4;   // write 1 to clear
-        fire_pending = 1;
-    }
+static USART_TypeDef *uart;
+
+static void logMsg(char *msg) {
+    sendString(uart, msg);
 }
 
 int main(void) {
-    // Turn the LED on first, so a lit LED with no blinking means the code is
-    // stuck somewhere below (clock setup, or a fault / unnamed interrupt).
-    gpioEnable(GPIO_PORT_B);
-    pinMode(HEARTBEAT_PIN, GPIO_OUTPUT);
-    digitalWrite(HEARTBEAT_PIN, PIO_HIGH);
-
     configureFlash();
     configureClock();       // 80 MHz from PLL
+    SysTick_Config(SystemCoreClock / 1000);
 
+    uart = initUSART(USART1_ID, BAUD_RATE);
     audioInit();
-    initFpgaInterrupts();
+    fpgaInit();             // interrupts on PA6/PB0; SPI idle (CS high)
 
     pinMode(TEST_BTN_PIN, GPIO_INPUT);
     pinResistor(TEST_BTN_PIN, GPIO_PULL_UP);
-    int btn_prev = 1;
-    uint32_t loops = 0;
-    int shot_playing = 0;   // 1 while the sound playing is the shot sound
 
     __enable_irq();
+
+    logMsg("\r\nLaser tag MCU ready\r\n");
+    audioTestTone(150);     // short beep: MCU is running and the speaker works
+
+    // What is playing right now (so a sound is never restarted over itself)
+    enum { SND_NONE, SND_SHOT, SND_HIT } playing = SND_NONE;
+    int hit_pending = 0;    // hit sound waiting for the shot sound to end
+
+    int      btn_stable = 1, btn_last = 1;
+    uint32_t btn_changed_ms = 0;
 
     while (1) {
         audioService();
 
 #if PLAY_TUNE_ON_REPEAT
-        if (!audioBusy()) {
-            audioPlay(tune, TUNE_LENGTH);
-        }
+        if (!audioBusy()) audioPlay(tune, TUNE_LENGTH);
 #endif
 
-        if (!audioBusy()) shot_playing = 0;
+        if (!audioBusy()) playing = SND_NONE;
 
-        if (fire_pending) {
-            fire_pending = 0;
+        // ---- This unit fired (FIRE pin) ----
+        if (fpgaFirePending()) {
             audioPlay(shot_sound, SHOT_SOUND_LENGTH);
-            shot_playing = 1;
+            playing = SND_SHOT;
+            logMsg("SHOT\r\n");
         }
 
-        if (hit_pending && !shot_playing) {
+        // ---- This unit got hit (HIT pin) ----
+        if (fpgaHitPending()) {
+            // Later: lives--, game over check, report to scoreboard
+            hit_pending = 1;
+            logMsg("HIT\r\n");
+        }
+
+        // Play a waiting hit once the shot sound is done. If the hit sound is
+        // already playing, let it finish instead of restarting it.
+        if (hit_pending && playing != SND_SHOT) {
             hit_pending = 0;
-            // Later: read shooter ID over SPI and update lives here.
-            audioPlay(hit_sound, HIT_SOUND_LENGTH);
+            if (playing != SND_HIT) {
+                audioPlay(hit_sound, HIT_SOUND_LENGTH);
+                playing = SND_HIT;
+            }
         }
 
-        // SW3 test button: play on press (simple edge detect, no debounce
-        // needed since re-triggering just restarts the sound)
+        // ---- SW3: play the hit sound (speaker test), 30 ms debounce ----
         int btn = digitalRead(TEST_BTN_PIN);
-        if (btn_prev && !btn) {
-            audioPlay(hit_sound, HIT_SOUND_LENGTH);
-            shot_playing = 0;
-        }
-        btn_prev = btn;
-
-        // Heartbeat: a few blinks per second
-        if (++loops >= 300000) {
-            loops = 0;
-            togglePin(HEARTBEAT_PIN);
+        if (btn != btn_last) {
+            btn_last = btn;
+            btn_changed_ms = ms_ticks;
+        } else if (btn != btn_stable && (ms_ticks - btn_changed_ms) >= 30) {
+            btn_stable = btn;
+            if (!btn) {             // pressed
+                audioPlay(hit_sound, HIT_SOUND_LENGTH);
+                playing = SND_HIT;
+            }
         }
     }
 }

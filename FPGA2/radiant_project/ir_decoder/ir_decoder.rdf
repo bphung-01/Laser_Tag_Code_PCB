@@ -12,6 +12,9 @@
         <Source name="../../ir_test_top.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog" top_module="ir_test_top"/>
         </Source>
+        <Source name="../../mcu_spi.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
         <Source name="impl1.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>
         </Source>

@@ -9,6 +9,9 @@ Audacity export settings (File > Export Audio):
                  (or "Other uncompressed files" > RAW (header-less) >
                   Unsigned 8-bit PCM, then pass --raw)
 
+Voice recordings work too: silence at the start/end is trimmed and the volume
+is normalized automatically (turn off with --no-trim / --no-normalize).
+
 Other WAV formats (16-bit, stereo, 44.1 kHz) also work. They get mixed to
 mono, resampled and converted to unsigned 8-bit.
 
@@ -70,11 +73,23 @@ def read_raw_u8(path):
 
 
 def resample(x, src_rate, dst_rate):
-    """Linear interpolation. Fine for sound effects; use Audacity for best quality."""
+    """Linear interpolation. Fine for sound effects; use Audacity for best quality.
+
+    When going down in rate (e.g. 48 kHz -> 8 kHz), each output sample is the
+    average of the input samples it covers. That removes most content above
+    the new Nyquist limit, which would otherwise fold back as harsh noise."""
     if src_rate == dst_rate or not x:
         return x
     n_out = int(len(x) * dst_rate / src_rate)
     out = []
+    if dst_rate < src_rate:
+        step = src_rate / dst_rate
+        for i in range(n_out):
+            start = int(i * step)
+            end = max(start + 1, min(len(x), int((i + 1) * step)))
+            window = x[start:end]
+            out.append(sum(window) / len(window))
+        return out
     for i in range(n_out):
         pos = i * src_rate / dst_rate
         j = int(pos)
@@ -83,6 +98,32 @@ def resample(x, src_rate, dst_rate):
         b = x[j + 1] if j + 1 < len(x) else x[j]
         out.append(a + (b - a) * frac)
     return out
+
+
+def trim_silence(x, threshold=0.10, pad_s=0.02, rate=8000):
+    """Cut quiet parts off the start and end (voice recordings usually have
+    a second of room noise before you speak). Anything under 10% of the peak
+    counts as quiet. Keeps 20 ms around the sound."""
+    loud = [i for i, v in enumerate(x) if abs(v) > threshold]
+    if not loud:
+        return x
+    pad = int(pad_s * rate)
+    return x[max(0, loud[0] - pad): loud[-1] + pad + 1]
+
+
+def normalize(x, peak=0.9):
+    """Scale so the loudest sample hits `peak`. Microphone recordings are
+    often very quiet, which at 8 bits leaves almost nothing to hear."""
+    m = max((abs(v) for v in x), default=0.0)
+    return [v * peak / m for v in x] if m > 0 else x
+
+
+def remove_dc(x):
+    """Center the waveform on zero (some mics add a constant offset)."""
+    if not x:
+        return x
+    avg = sum(x) / len(x)
+    return [v - avg for v in x]
 
 
 def to_u8(x):
@@ -198,6 +239,10 @@ def main():
                    help="make a stand-in shoot ('pew') sound, save it as an 8-bit WAV, and convert it")
     p.add_argument("--synth-tune", metavar="WAV_OUT",
                    help="make a test melody (Ode to Joy), save it as an 8-bit WAV, and convert it")
+    p.add_argument("--no-trim", action="store_true",
+                   help="keep silence at the start/end (trimmed by default)")
+    p.add_argument("--no-normalize", action="store_true",
+                   help="keep the original volume (by default the peak is raised to 90%%)")
     p.add_argument("--rate", type=int, default=8000, help="output sample rate (must match AUDIO_SAMPLE_RATE)")
     p.add_argument("--name", default="sound", help="C array name, e.g. hit_sound")
     p.add_argument("-o", "--output", required=True, help="output .h file")
@@ -231,7 +276,21 @@ def main():
 
     if rate != args.rate:
         print("Resampling %d Hz -> %d Hz (better: set Project Rate to %d in Audacity)" % (rate, args.rate, args.rate))
-    u8 = to_u8(resample(x, rate, args.rate)) + [SILENCE] * TAIL_SAMPLES
+    x = remove_dc(resample(x, rate, args.rate))
+    if not args.no_trim:
+        x = normalize(x)        # so the silence threshold is relative to the peak
+        before = len(x)
+        x = trim_silence(x, rate=args.rate)
+        if len(x) < before:
+            print("Trimmed silence: %.2f s -> %.2f s" % (before / args.rate, len(x) / args.rate))
+    if not args.no_normalize:
+        x = normalize(x)
+    # Short fades so the sound doesn't start or end with a click
+    fade = min(len(x) // 4, int(0.005 * args.rate))
+    for i in range(fade):
+        x[i] *= i / fade
+        x[-1 - i] *= i / fade
+    u8 = to_u8(x) + [SILENCE] * TAIL_SAMPLES
 
     write_header(args.output, args.name, u8, args.rate, args.input.replace("\\", "/").split("/")[-1])
     print("Wrote %s: %d samples (%.2f s, %d bytes of flash)" % (args.output, len(u8), len(u8) / args.rate, len(u8)))
