@@ -1,0 +1,9 @@
+-w
+-gui
+-msgset "C:/Users/jgsen/Downloads/Laser Tag Code & PCB/Laser_Tag_Code_PCB/FPGA2/radiant_project/ir_decoder/promote.xml"
+-n 1
+-t 1
+-s 1
+-cores 1
+-hsp m
+-exp parPathBased=ON
