@@ -108,3 +108,67 @@ void readString(USART_TypeDef * USART, char* charArray){
     }
     while(USART->ISR & USART_ISR_RXNE);
 }
+
+///////////////////////////////////////////////////////////////////////////////
+// Interrupt-driven receive for USART1
+// Every received byte goes into a ring buffer, so nothing is lost while the
+// main loop is busy. uartReadLine() hands the bytes back one line at a time.
+///////////////////////////////////////////////////////////////////////////////
+
+#define RX_BUF_SIZE  128   // ring buffer, bytes
+#define RX_LINE_SIZE 64    // longest line kept
+
+// Overrun, noise and framing errors. Their clear bits in ICR sit at the same
+// bit positions as the flags in ISR.
+#define RX_ERRORS (USART_ISR_ORE | USART_ISR_NE | USART_ISR_FE)
+
+static volatile char     rx_buf[RX_BUF_SIZE];
+static volatile uint32_t rx_head = 0;   // next free slot (written by the ISR)
+static volatile uint32_t rx_tail = 0;   // next byte to read (main loop)
+
+static char rx_line[RX_LINE_SIZE];
+static int  rx_line_len = 0;
+
+void uartEnableRxInterrupt(void) {
+    USART1->CR1 |= USART_CR1_RXNEIE;
+    NVIC_SetPriority(USART1_IRQn, 2);
+    NVIC_EnableIRQ(USART1_IRQn);
+}
+
+void USART1_IRQHandler(void) {
+    uint32_t isr = USART1->ISR;
+
+    // An uncleared overrun would re-enter this handler forever.
+    if (isr & RX_ERRORS) USART1->ICR = RX_ERRORS;
+
+    if (isr & USART_ISR_RXNE) {
+        char c = (char)USART1->RDR;                 // reading RDR clears RXNE
+        uint32_t next = (rx_head + 1) % RX_BUF_SIZE;
+        if (next != rx_tail) {                      // drop the byte if full
+            rx_buf[rx_head] = c;
+            rx_head = next;
+        }
+    }
+}
+
+int uartReadLine(char *line, int max_len) {
+    while (rx_tail != rx_head) {
+        char c = rx_buf[rx_tail];
+        rx_tail = (rx_tail + 1) % RX_BUF_SIZE;
+
+        if (c == '\r') continue;
+
+        if (c == '\n') {
+            int n = rx_line_len < max_len - 1 ? rx_line_len : max_len - 1;
+            for (int i = 0; i < n; i++) line[i] = rx_line[i];
+            line[n] = 0;
+            rx_line_len = 0;
+            return 1;
+        }
+
+        // Too long to be a request (for example boot noise): start over.
+        if (rx_line_len >= RX_LINE_SIZE - 1) rx_line_len = 0;
+        rx_line[rx_line_len++] = c;
+    }
+    return 0;
+}

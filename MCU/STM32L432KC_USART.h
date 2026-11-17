@@ -22,4 +22,12 @@ char readChar(USART_TypeDef * USART);
 void sendString(USART_TypeDef * USART, char * charArray);
 void readString(USART_TypeDef * USART, char * charArray);
 
+// Interrupt-driven receive (USART1 only). Call uartEnableRxInterrupt() once
+// after initUSART(USART1_ID, ...).
+void uartEnableRxInterrupt(void);
+
+// Copies the next complete line (without its '\n') into `line` and returns 1.
+// Returns 0 right away if no complete line has arrived yet.
+int uartReadLine(char * line, int max_len);
+
 #endif
