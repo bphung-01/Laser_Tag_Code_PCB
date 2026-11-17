@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laser Tag Scoreboard</title>
+<style>
+  :root {
+    --bg: #121212;
+    --panel: #1a1a1a;
+    --line: #2e2e2e;
+    --text: #ededed;
+    --muted: #8f8f8f;
+    --p1: #e5484d;
+    --p2: #4c9df5;
+    --good: #4cb563;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* ---------- Layout ---------- */
+  .page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 16px 40px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    grid-template-areas: "head head" "arena feed" "ctrl feed";
+    gap: 20px 24px;
+    align-items: start;
+  }
+  header {
+    grid-area: head; display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap;
+    padding-bottom: 14px; border-bottom: 1px solid var(--line);
+  }
+  h1 { margin: 0; font-size: 20px; font-weight: 600; }
+  .status { display: inline-flex; align-items: center; gap: 7px; font-size: 14px; color: var(--muted); }
+  .status i { width: 8px; height: 8px; border-radius: 50%; background: #555; }
+  .status.active { color: var(--text); }
+  .status.active i { background: var(--good); }
+  .clock { margin-left: auto; font-size: 28px; font-weight: 600; }
+
+  /* ---------- Players ---------- */
+  .arena { grid-area: arena; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  .player {
+    --c: var(--p1);
+    position: relative; overflow: hidden;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px;
+    transition: opacity .3s, border-color .3s;
+  }
+  .player[data-id="2"] { --c: var(--p2); }
+  .player .top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; min-height: 30px; }
+  .player h2 { margin: 0; font-size: 22px; font-weight: 600; color: var(--c); overflow-wrap: anywhere; }
+  .badge { font-size: 14px; font-weight: 600; }
+  .player.winner { border-color: var(--good); }
+  .player.winner .badge { color: var(--good); }
+  .player.loser { opacity: .55; }
+  .player.loser .badge { color: var(--text); }
+
+  .lives { display: flex; gap: 10px; margin: 22px 0 8px; }
+  .life { width: 52px; height: 52px; }
+  .life path { fill: var(--c); stroke: var(--c); stroke-width: 1.5; }
+  .life.lost path { fill: none; stroke: #444; }
+  .lives-count { font-size: 14px; color: var(--muted); }
+
+  .stats { display: flex; gap: 32px; margin: 20px 0 0; padding-top: 14px; border-top: 1px solid var(--line); }
+  .stats dt { font-size: 13px; color: var(--muted); }
+  .stats dd { margin: 0; font-size: 22px; font-weight: 600; }
+
+  .player.flash::after {
+    content: ""; position: absolute; inset: 0; background: #fff;
+    animation: flash .5s forwards; pointer-events: none;
+  }
+
+  /* ---------- Recent hits ---------- */
+  .feed { grid-area: feed; position: sticky; top: 16px; }
+  .feed h3 { margin: 0 0 6px; font-size: 14px; font-weight: 600; display: flex; justify-content: space-between; }
+  .feed h3 span:last-child { color: var(--muted); font-weight: 400; }
+  .feed ol { list-style: none; margin: 0; padding: 0; max-height: 440px; overflow-y: auto; border-top: 1px solid var(--line); }
+  .feed li { display: flex; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+  .feed li time { color: var(--muted); flex: none; }
+  .feed li small { display: block; color: var(--muted); font-size: 13px; }
+  .feed .empty { color: var(--muted); border-bottom: 0; }
+  .c1 { color: var(--p1); font-weight: 600; }
+  .c2 { color: var(--p2); font-weight: 600; }
+  .feed small.out { color: var(--text); font-weight: 600; }
+
+  /* ---------- Controls ---------- */
+  .controls { grid-area: ctrl; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  button {
+    font: inherit; font-size: 14px; font-weight: 500;
+    color: var(--text); background: #242424; border: 1px solid #3a3a3a; border-radius: 6px;
+    padding: 9px 16px; cursor: pointer;
+  }
+  button:hover:not(:disabled) { background: #2e2e2e; }
+  button:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+  button:disabled { opacity: .4; cursor: not-allowed; }
+  button.primary { background: var(--text); border-color: var(--text); color: #121212; }
+  button.primary:hover:not(:disabled) { background: #fff; }
+  .demo { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-left: auto; }
+  .demo[hidden] { display: none; }
+  .link { font-size: 14px; color: var(--muted); }
+  .demo span { font-size: 13px; color: var(--muted); margin-right: 4px; }
+
+  /* ---------- Start countdown ---------- */
+  .count {
+    position: fixed; inset: 0; z-index: 9; display: none;
+    align-items: center; justify-content: center; pointer-events: none;
+    background: rgba(0, 0, 0, .7);
+    font-size: clamp(110px, 28vw, 260px); font-weight: 700; line-height: 1;
+  }
+  .count.show { display: flex; }
+
+  /* ---------- Game over ---------- */
+  .overlay {
+    position: fixed; inset: 0; z-index: 10; display: none;
+    align-items: center; justify-content: center; padding: 16px;
+    background: rgba(0, 0, 0, .75);
+  }
+  .overlay.show { display: flex; }
+  .result {
+    --c: var(--p1);
+    width: min(440px, 100%);
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    padding: 28px;
+  }
+  .result .small { font-size: 14px; color: var(--muted); }
+  .result .who { margin: 6px 0 10px; font-size: clamp(30px, 7vw, 40px); font-weight: 700; line-height: 1.15; overflow-wrap: anywhere; }
+  .result .who b { color: var(--c); }
+  .result .lose { margin: 0 0 24px; color: var(--muted); }
+  .result .lose b { color: var(--l); font-weight: 600; }
+  .result .row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+  /* ---------- Name entry ---------- */
+  .result h2 { margin: 0 0 4px; font-size: 22px; font-weight: 600; }
+  .result .hint { margin: 0 0 20px; font-size: 14px; color: var(--muted); }
+  .field { display: block; margin: 0 0 16px; }
+  .field span { display: block; margin-bottom: 6px; font-size: 14px; }
+  .field input {
+    width: 100%; padding: 10px 12px;
+    font: inherit; color: var(--text);
+    background: var(--bg); border: 1px solid #3a3a3a; border-radius: 6px;
+  }
+  .field input:focus { outline: none; border-color: var(--text); }
+  .field input::placeholder { color: #5c5c5c; }
+  .result form .row { margin-top: 24px; }
+
+  @keyframes flash { from { opacity: .35; } to { opacity: 0; } }
+
+  @media (max-width: 900px) {
+    .page { grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "arena" "ctrl" "feed"; }
+    .feed { position: static; }
+    .feed ol { max-height: 260px; }
+  }
+  @media (max-width: 560px) {
+    .arena { grid-template-columns: 1fr; }
+    .demo { margin-left: 0; width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <header>
+    <h1>Laser Tag</h1>
+    <div class="status" id="status"><i></i><span id="statusText">Inactive</span></div>
+    <div class="link" id="link" aria-live="polite"></div>
+    <div class="clock num" id="clock" title="Match time">00:00</div>
+  </header>
+
+  <main class="arena">
+    <section class="player" data-id="1">
+      <div class="top"><h2 class="name"></h2><span class="badge"></span></div>
+      <div class="lives" role="img"></div>
+      <div class="lives-count"></div>
+      <dl class="stats">
+        <div><dt>Hits landed</dt><dd class="dealt num">0</dd></div>
+        <div><dt>Hits taken</dt><dd class="taken num">0</dd></div>
+      </dl>
+    </section>
+
+    <section class="player" data-id="2">
+      <div class="top"><h2 class="name"></h2><span class="badge"></span></div>
+      <div class="lives" role="img"></div>
+      <div class="lives-count"></div>
+      <dl class="stats">
+        <div><dt>Hits landed</dt><dd class="dealt num">0</dd></div>
+        <div><dt>Hits taken</dt><dd class="taken num">0</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <aside class="feed">
+    <h3><span>Recent hits</span><span class="num" id="hitTotal">0</span></h3>
+    <ol id="feed" aria-live="polite"></ol>
+  </aside>
+
+  <div class="controls">
+    <button class="primary" id="btnStart">Start game</button>
+    <button id="btnReset">Reset</button>
+    <div class="demo" id="demo">
+      <span>Demo, not connected:</span>
+      <button id="btnHit1" title="Keyboard: 1">Hit Player 1</button>
+      <button id="btnHit2" title="Keyboard: 2">Hit Player 2</button>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="setup" role="dialog" aria-modal="true" aria-labelledby="setupTitle">
+  <div class="result">
+    <form id="setupForm">
+      <h2 id="setupTitle">Who's playing?</h2>
+      <p class="hint">Both players need a name before the game can start.</p>
+      <label class="field"><span class="c1">Player 1 (red)</span>
+        <input id="name1" maxlength="12" placeholder="Name" required pattern=".*\S.*" title="Enter a name for Player 1" autocomplete="off" spellcheck="false"></label>
+      <label class="field"><span class="c2">Player 2 (blue)</span>
+        <input id="name2" maxlength="12" placeholder="Name" required pattern=".*\S.*" title="Enter a name for Player 2" autocomplete="off" spellcheck="false"></label>
+      <div class="row">
+        <button class="primary" type="submit">Start game</button>
+        <button type="button" id="btnCancel">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="count num" id="count" aria-live="assertive"></div>
+
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="who">
+  <div class="result" id="result">
+    <div class="small">Game over</div>
+    <div class="who" id="who"></div>
+    <p class="lose" id="lose"></p>
+    <div class="row">
+      <button class="primary" id="btnAgain">Play again</button>
+      <button id="btnClose">View scoreboard</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var MAX_LIVES = 3;
+  var FEED_MAX = 20;
+  var COUNTDOWN = 3;   // seconds before the game goes live
+  // One shield per life
+  var ICON = '<svg class="life" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5.25 3.4 10.15 8 11.5 4.6-1.35 8-6.25 8-11.5V5l-8-3z" stroke-linejoin="round"/></svg>';
+
+  var POLL_MS = 500;
+
+  // Served from the laser tag board, the page talks to the MCU. Opened as a
+  // plain file, it runs as a stand-alone demo with fake hit buttons.
+  var BOARD = location.protocol !== "file:";
+
+  var names = { 1: "Player 1", 2: "Player 2" };
+  var cdTimer = 0;
+
+  // state: "idle" | "countdown" | "live" | "over"
+  var game = { state: "idle", lives: {}, dealt: {}, taken: {}, hits: [], startedAt: 0, elapsed: 0, winner: 0 };
+
+  var $ = function (id) { return document.getElementById(id); };
+  var panel = function (id) { return document.querySelector('.player[data-id="' + id + '"]'); };
+  var other = function (id) { return id === 1 ? 2 : 1; };
+  var plural = function (n) { return n + (n === 1 ? " life" : " lives"); };
+
+  function fmt(ms) {
+    var s = Math.floor(ms / 1000), m = Math.floor(s / 60);
+    s %= 60;
+    return (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  }
+  function now() { return game.state === "live" ? Date.now() - game.startedAt : game.elapsed; }
+
+  /* ---------- Talking to the board ----------
+     The ESP8266 passes each request to the MCU, which replies with
+       LT,<phase>,<lives>,<hits>,<player>,<ms>
+     phase: 0 idle, 1 countdown, 2 live, 3 over. player: which player this
+     board is. The MCU cannot speak first, so the page asks every POLL_MS.
+     With one board, only that board's player loses lives. */
+
+  var queue = Promise.resolve();   // one request at a time
+  var waiting = 0;                 // requests not answered yet
+  var commands = 0;                // start/reset requests not answered yet
+  var synced = false;              // had a first answer (or failure)
+  var PHASES = ["idle", "countdown", "live", "over"];
+
+  function ask(path, isCommand) {
+    waiting++;
+    if (isCommand) commands++;
+    function finish(ok) {
+      waiting--;
+      if (isCommand) commands--;
+      $("link").textContent = ok ? "" : "Board not responding";
+      if (!synced) {
+        synced = true;
+        if (game.state === "idle") openSetup();
+      }
+    }
+    queue = queue.then(function () {
+      return fetch("/" + path, { cache: "no-store" });
+    }).then(function (reply) {
+      return reply.text();
+    }).then(function (text) {
+      var m = /LT,(\d+),(\d+),(\d+),(\d+),(\d+)/.exec(text);
+      if (!m) throw new Error("no status in reply");
+      // A status asked for before Start/Reset was pressed is out of date.
+      if (isCommand || commands === 0) {
+        applyBoard({ phase: +m[1], lives: +m[2], hits: +m[3], player: +m[4], ms: +m[5] });
+      }
+      finish(true);
+    }).catch(function () {
+      if (isCommand) {             // Start/Reset never reached the board
+        clearTimeout(cdTimer);
+        $("count").classList.remove("show");
+        game.state = "idle";
+        render();
+      }
+      finish(false);
+    });
+  }
+
+  function applyBoard(s) {
+    var me = s.player === 2 ? 2 : 1, foe = other(me);
+    var before = game.state;
+    var known = game.taken[me];
+
+    if (s.hits < known) {          // the board started a new game
+      game.hits = [];
+      known = 0;
+    }
+    var gotHit = s.hits > known;
+    while (known < s.hits) {
+      known++;
+      game.hits.unshift({ t: s.ms, shooter: foe, victim: me, left: Math.max(MAX_LIVES - known, 0) });
+    }
+    game.hits.length = Math.min(game.hits.length, FEED_MAX);
+
+    game.lives[me] = s.lives;
+    game.lives[foe] = MAX_LIVES;
+    game.taken[me] = game.dealt[foe] = s.hits;
+    game.taken[foe] = game.dealt[me] = 0;
+
+    game.state = PHASES[s.phase] || "idle";
+    game.winner = game.state === "over" ? foe : 0;
+    game.startedAt = Date.now() - s.ms;
+    game.elapsed = s.ms;
+
+    if (gotHit) flash(me);
+    if (game.state === "over" && before !== "over") showResult();
+    if (game.state !== "over") $("overlay").classList.remove("show");
+    if (game.state === "idle" && before !== "idle") {
+      clearTimeout(cdTimer);
+      $("count").classList.remove("show");
+    }
+    render();
+  }
+
+  function flash(id) {
+    var p = panel(id);
+    p.classList.remove("flash");
+    void p.offsetWidth;            // restart the animation
+    p.classList.add("flash");
+  }
+
+  /* ---------- Game actions ---------- */
+
+  function resetPressed() {
+    if (BOARD) ask("reset", true);
+    resetGame();
+  }
+
+  function resetGame() {
+    game.state = "idle";
+    game.lives = { 1: MAX_LIVES, 2: MAX_LIVES };
+    game.dealt = { 1: 0, 2: 0 };
+    game.taken = { 1: 0, 2: 0 };
+    game.hits = [];
+    game.elapsed = 0;
+    game.winner = 0;
+    $("overlay").classList.remove("show");
+    $("setup").classList.remove("show");
+    clearTimeout(cdTimer);
+    $("count").classList.remove("show");
+    render();
+  }
+
+  function showCount(text) {
+    $("count").textContent = text;
+    $("count").classList.add("show");
+  }
+
+  // Players type their names before a new game. A rematch ("Play again")
+  // keeps the same names and skips this step.
+  function openSetup() {
+    if (game.state === "live" || game.state === "countdown") return;
+    $("overlay").classList.remove("show");
+    $("setup").classList.add("show");
+    $("name1").focus();
+    $("name1").select();
+  }
+
+  function submitSetup(e) {
+    e.preventDefault();
+    [1, 2].forEach(function (id) {
+      names[id] = $("name" + id).value.trim() || "Player " + id;
+    });
+    try { localStorage.setItem("lasertag-names", JSON.stringify(names)); } catch (err) {}
+    startGame();
+  }
+
+  // 3, 2, 1, GO! -- hits only count once the game is live.
+  // On the board, the MCU runs the real 3 second timer and the page shows
+  // the numbers alongside it.
+  function startGame() {
+    if (game.state === "live" || game.state === "countdown") return;
+    resetGame();
+    if (BOARD) ask("start", true);
+    game.state = "countdown";
+    render();
+    var n = COUNTDOWN;
+    (function tick() {
+      if (n > 0) {
+        showCount(n--);
+        cdTimer = setTimeout(tick, 1000);
+        return;
+      }
+      if (!BOARD) {
+        game.state = "live";
+        game.startedAt = Date.now();
+        render();
+      }
+      showCount("GO!");
+      cdTimer = setTimeout(function () { $("count").classList.remove("show"); }, 700);
+    })();
+  }
+
+  // Demo only: a fake hit from one of the demo buttons.
+  function registerHit(shooter, victim) {
+    if (BOARD || game.state !== "live" || game.lives[victim] <= 0) return;
+    game.lives[victim]--;
+    game.dealt[shooter]++;
+    game.taken[victim]++;
+    game.hits.unshift({ t: now(), shooter: shooter, victim: victim, left: game.lives[victim] });
+    if (game.hits.length > FEED_MAX) game.hits.pop();
+    flash(victim);
+
+    if (game.lives[victim] === 0) {
+      game.elapsed = now();
+      game.state = "over";
+      game.winner = shooter;
+      showResult();
+    }
+    render();
+  }
+
+  /* ---------- Rendering ---------- */
+
+  function render() {
+    var over = game.state === "over";
+
+    [1, 2].forEach(function (id) {
+      var p = panel(id), left = game.lives[id], html = "";
+      for (var i = 0; i < MAX_LIVES; i++) html += ICON.replace('"life"', i < left ? '"life"' : '"life lost"');
+      p.querySelector(".name").textContent = names[id];
+      p.querySelector(".lives").innerHTML = html;
+      p.querySelector(".lives").setAttribute("aria-label", left + " of " + MAX_LIVES + " lives");
+      p.querySelector(".lives-count").textContent = plural(left) + " left";
+      p.querySelector(".dealt").textContent = game.dealt[id];
+      p.querySelector(".taken").textContent = game.taken[id];
+      p.classList.toggle("winner", over && game.winner === id);
+      p.classList.toggle("loser", over && game.winner !== id);
+      p.querySelector(".badge").textContent = over ? (game.winner === id ? "Winner" : "Eliminated") : "";
+    });
+
+    var feed = $("feed");
+    feed.innerHTML = "";
+    if (!game.hits.length) {
+      var empty = document.createElement("li");
+      empty.className = "empty";
+      empty.textContent = "No hits yet.";
+      feed.appendChild(empty);
+    }
+    game.hits.forEach(function (h) {
+      var li = document.createElement("li");
+      li.innerHTML = '<time class="num">' + fmt(h.t) + "</time>" +
+        '<div><span class="c' + h.shooter + '"></span> hit <span class="c' + h.victim + '"></span>' +
+        (h.left ? "<small>" + plural(h.left) + " left</small>" : '<small class="out">Eliminated</small>') + "</div>";
+      var who = li.querySelectorAll("div > span");
+      who[0].textContent = names[h.shooter];
+      who[1].textContent = names[h.victim];
+      feed.appendChild(li);
+    });
+    $("hitTotal").textContent = game.dealt[1] + game.dealt[2];
+
+    var live = game.state === "live";
+    $("status").className = "status" + (live ? " active" : "");
+    $("statusText").textContent = live ? "Active" : "Inactive";
+    $("clock").textContent = fmt(now());
+
+    $("btnStart").disabled = live || game.state === "countdown";
+    $("btnStart").textContent = over ? "Play again" : "Start game";
+    $("btnHit1").disabled = $("btnHit2").disabled = !live;
+    $("btnHit1").textContent = "Hit " + names[1];
+    $("btnHit2").textContent = "Hit " + names[2];
+  }
+
+  function showResult() {
+    var w = game.winner, l = other(w);
+    $("result").style.setProperty("--c", "var(--p" + w + ")");
+    $("result").style.setProperty("--l", "var(--p" + l + ")");
+    $("who").innerHTML = "<b></b> wins";
+    $("who").querySelector("b").textContent = names[w];
+    $("lose").innerHTML = "<b></b> was eliminated after " + fmt(game.elapsed) + ". " +
+      "The winner had " + plural(game.lives[w]) + " left.";
+    $("lose").querySelector("b").textContent = names[l];
+    $("overlay").classList.add("show");
+    $("btnAgain").focus();
+  }
+
+  /* ---------- Wiring ---------- */
+
+  $("btnStart").onclick = function () { if (game.state === "over") startGame(); else openSetup(); };
+  $("btnAgain").onclick = startGame;
+  $("setupForm").onsubmit = submitSetup;
+  $("btnCancel").onclick = function () { $("setup").classList.remove("show"); };
+  $("btnReset").onclick = resetPressed;
+  $("btnClose").onclick = function () { $("overlay").classList.remove("show"); };
+  $("btnHit1").onclick = function () { registerHit(2, 1); };
+  $("btnHit2").onclick = function () { registerHit(1, 2); };
+
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === "Escape") {
+      $("overlay").classList.remove("show");
+      $("setup").classList.remove("show");
+    }
+    if (e.target.tagName === "INPUT") return;   // typing a name, not firing
+    if (e.key === "1") registerHit(2, 1);
+    else if (e.key === "2") registerHit(1, 2);
+  });
+
+  setInterval(function () { if (game.state === "live") $("clock").textContent = fmt(now()); }, 250);
+
+  // Names typed last time are filled in again.
+  try {
+    var saved = JSON.parse(localStorage.getItem("lasertag-names")) || {};
+    [1, 2].forEach(function (id) {
+      if (typeof saved[id] !== "string") return;
+      $("name" + id).value = saved[id].slice(0, 12);
+      names[id] = $("name" + id).value.trim() || names[id];
+    });
+  } catch (err) {}
+
+  $("demo").hidden = BOARD;
+  resetGame();
+
+  if (BOARD) {
+    // The name box opens after the first answer, unless a game is under way.
+    ask("state");
+    setInterval(function () { if (!waiting) ask("state"); }, POLL_MS);
+  } else {
+    openSetup();
+  }
+})();
+</script>
+</body>
+</html>

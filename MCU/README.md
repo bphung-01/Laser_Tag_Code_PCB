@@ -23,13 +23,58 @@ Other pins:
 - FPGA P19: TSOP4838 output.
 - MCU PA7: SW3, plays the hit sound (speaker test).
 - MCU PB6 and PB7: leave unconnected. Nucleo solder bridges tie them to PA6 and PA5.
-- USART1 runs at 115200 baud. Until the ESP8266 is connected, it prints events
-  (SHOT, HIT) that you can watch with a 3.3 V
-  USB-serial adapter on PA9.
+- USART1 (PA9 TX, PA10 RX) runs at 125000 baud to the ESP8266. TX and RX cross
+  over: MCU TX goes to ESP8266 RX.
+
+## Scoreboard page (`web.c`, `game.c`)
+
+The ESP8266 keeps the E155 course web server firmware. The MCU sends it the
+scoreboard page and answers the page's requests.
+
+1. Power the board, join the `Lab6ESP_xx` Wi-Fi network on a laptop.
+2. Open `http://192.168.4.1/` (http, not https). The page takes a second or two
+   to load.
+3. Enter the player names and press **Start game**. After a 3 second countdown
+   the game is live: the blaster is armed and each hit costs one of 3 lives.
+4. **Reset** puts the board back to idle with full lives.
+
+The blaster is disarmed and hits are ignored unless a game is live, so with
+this firmware there is no shot or hit sound until a game is started from the
+page. (SW3 still plays the hit sound as a speaker test.)
+
+How it talks to the ESP8266:
+- For each browser request the ESP8266 sends one line, `/REQ:<path>`.
+  `/start` arrives as `/REQ:start`, the home page as `/REQ:`.
+- The MCU replies and the ESP8266 forwards the reply once it sees `</html>`.
+- `/state`, `/start` and `/reset` get a short status reply,
+  `<!DOCTYPE html><html>LT,<phase>,<lives>,<hits>,<player>,<ms></html>`
+  (phase: 0 idle, 1 countdown, 2 live, 3 over). Anything else gets the page.
+- The ESP8266 never speaks first, so the page asks for `/state` twice a second.
+  A hit shows on the page within about half a second.
+
+This is a one-board demo: the page shows both players, but only this board's
+player loses lives. Which player the board is comes from SW6 through the FPGA.
+
+### Editing the page
+
+The page is `../Web/scoreboard.html`. The MCU sends the copy stored in
+`webpage.h`, so regenerate that after every edit:
+```
+python tools/make_webpage.py
+```
+It strips comments and spacing, and minifies the script if
+[bun](https://bun.sh) is installed.
+
+To try the page without the board:
+```
+python tools/mock_board.py
+```
+then open `http://127.0.0.1:8155/`. Press Enter in the terminal to fake a hit.
+Opening `scoreboard.html` directly as a file runs it as a stand-alone demo.
 
 ## FPGA → MCU events (`fpga.c`)
 
-Two interrupt lines, one per event. No SPI is involved.
+Two interrupt lines, one per event.
 - **FIRE (P18 → PB0, jumper wire):** a rising edge means this unit just fired,
   so the MCU plays the pew.
 - **HIT (P27 → PA6, SW7 switch 4):** a 1 ms pulse per hit, so the MCU plays the
@@ -39,10 +84,10 @@ The FPGA decides what counts as a hit: only the other player's shots. Turn
 **SW6 switch 1 (P32)** ON for test mode, where your own shots count too, so one
 board can test hits.
 
-The SPI link (`STM32L432KC_SPI.c`, `FPGA2/mcu_spi.sv`) is wired and set up, but
-`main.c` doesn't use it yet. It's kept for LCD data and game control later. SPI
-mode 0 at 1.25 MHz: `0x00` reads the status byte, `0x01 <ctrl>` writes the
-control register (bit 0 = armed, which is 1 after reset).
+The SPI link (`STM32L432KC_SPI.c`, `FPGA2/mcu_spi.sv`) is used by `game.c` to
+arm and disarm the blaster and to read which player this board is. SPI mode 0
+at 1.25 MHz: `0x00` reads the status byte, `0x01 <ctrl>` writes the control
+register (bit 0 = armed, which is 1 after an FPGA reset).
 
 ## Sounds (DAC + DMA)
 

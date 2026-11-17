@@ -1,6 +1,10 @@
 // main.c
-// Laser tag MCU: plays a sound when this unit fires or gets hit.
-// The FPGA reports both events on their own interrupt lines.
+// Laser tag MCU: plays a sound when this unit fires or gets hit, keeps the
+// game state (game.c) and serves the scoreboard page through the ESP8266
+// (web.c). The FPGA reports shots and hits on their own interrupt lines.
+//
+// A game is started and reset from the scoreboard page. Until a game is live
+// the blaster is disarmed and hits are ignored.
 //
 // Pin plan (E155 FA23 Development Board v4, SW7 = MCU <-> FPGA bridges):
 //   SW7 1  PA10 <-> P23   USART1 RX  (ESP8266)         ON or OFF (FPGA ignores P23)
@@ -13,8 +17,8 @@
 //   SW7 8  PB3   -> P21   SPI SCK  (for later)         ON
 //   PB0  <- FPGA P18      FIRE interrupt               jumper wire
 //   PA5  -> DAC audio  -> 10 uF -> volume pot -> LM386 pin 3
-//   PA9  -> USART1 TX, PA10 <- USART1 RX, 115200 baud (ESP8266 later; for now
-//           event messages you can watch with a 3.3 V USB-serial adapter)
+//   PA9  -> USART1 TX, PA10 <- USART1 RX, 125000 baud to the ESP8266 (E155
+//           course web server firmware; TX and RX cross over)
 //   PA7  <- SW3 push button: plays the hit sound (speaker test)
 //   PB6, PB7: leave unconnected (Nucleo solder bridges tie them to PA6, PA5)
 //
@@ -29,6 +33,8 @@
 #include "STM32L432KC.h"
 #include "audio.h"
 #include "fpga.h"
+#include "game.h"
+#include "web.h"
 #include "hit_sound.h"
 #include "shot_sound.h"
 
@@ -47,7 +53,7 @@
 #endif
 
 #define TEST_BTN_PIN  PA7
-#define BAUD_RATE     115200
+#define BAUD_RATE     125000   // fixed by the ESP8266 course firmware
 
 ///////////////////////////////////////////////////////////////////////////////
 // 1 ms tick (SysTick) for debouncing and, later, game timing
@@ -59,31 +65,25 @@ void SysTick_Handler(void) {
     ms_ticks++;
 }
 
-///////////////////////////////////////////////////////////////////////////////
-// Serial log
-///////////////////////////////////////////////////////////////////////////////
-
-static USART_TypeDef *uart;
-
-static void logMsg(char *msg) {
-    sendString(uart, msg);
-}
-
 int main(void) {
     configureFlash();
     configureClock();       // 80 MHz from PLL
     SysTick_Config(SystemCoreClock / 1000);
 
-    uart = initUSART(USART1_ID, BAUD_RATE);
+    // The serial port belongs to the ESP8266: only web.c sends on it.
+    USART_TypeDef *uart = initUSART(USART1_ID, BAUD_RATE);
+    uartEnableRxInterrupt();
+    webInit(uart);
+
     audioInit();
     fpgaInit();             // interrupts on PA6/PB0; SPI idle (CS high)
+    gameInit();             // idle, blaster disarmed until a game goes live
 
     pinMode(TEST_BTN_PIN, GPIO_INPUT);
     pinResistor(TEST_BTN_PIN, GPIO_PULL_UP);
 
     __enable_irq();
 
-    logMsg("\r\nLaser tag MCU ready\r\n");
     audioTestTone(150);     // short beep: MCU is running and the speaker works
 
     // What is playing right now (so a sound is never restarted over itself)
@@ -96,6 +96,10 @@ int main(void) {
     while (1) {
         audioService();
 
+        // ---- Scoreboard page requests and game timing ----
+        webService(ms_ticks);
+        gameTick(ms_ticks);
+
 #if PLAY_TUNE_ON_REPEAT
         if (!audioBusy()) audioPlay(tune, TUNE_LENGTH);
 #endif
@@ -106,14 +110,13 @@ int main(void) {
         if (fpgaFirePending()) {
             audioPlay(shot_sound, SHOT_SOUND_LENGTH);
             playing = SND_SHOT;
-            logMsg("SHOT\r\n");
         }
 
         // ---- This unit got hit (HIT pin) ----
+        // Only counts while a game is live. The page picks up the new lives
+        // count the next time it asks for the status.
         if (fpgaHitPending()) {
-            // Later: lives--, game over check, report to scoreboard
-            hit_pending = 1;
-            logMsg("HIT\r\n");
+            if (gameHit(ms_ticks)) hit_pending = 1;
         }
 
         // Play a waiting hit once the shot sound is done. If the hit sound is
