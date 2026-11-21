@@ -37,6 +37,7 @@
 #include "web.h"
 #include "hit_sound.h"
 #include "shot_sound.h"
+#include "lcd.h"
 
 // 1 = play tune.h over and over (speaker/amp test).
 #define PLAY_TUNE_ON_REPEAT 0
@@ -45,6 +46,10 @@
 //     is always armed, every shot plays the shot sound and every hit plays
 //     the hit sound. Set back to 0 for the normal game with the scoreboard.
 #define STANDALONE_TEST 1
+
+// 1 = LCD test only: runs lcdTest() forever and nothing else (no sounds,
+//     FPGA or Wi-Fi). LCD on PA8 (SCL) / PA12 (SDA), see lcd.h.
+#define LCD_TEST 1
 
 #if HIT_SOUND_RATE != AUDIO_SAMPLE_RATE
 #error "hit_sound.h sample rate doesn't match AUDIO_SAMPLE_RATE; re-export at 8000 Hz"
@@ -70,10 +75,66 @@ void SysTick_Handler(void) {
     ms_ticks++;
 }
 
+#if LCD_TEST
+///////////////////////////////////////////////////////////////////////////////
+// LCD test: address on line 1, an uptime counter and a heart on line 2.
+// If no backpack answers on I2C, the speaker beeps every second instead.
+///////////////////////////////////////////////////////////////////////////////
+
+static void lcdPrintUint(uint32_t v, int width) {
+    char buf[11];
+    int  n = 0;
+    do { buf[n++] = (char)('0' + v % 10); v /= 10; } while (v && n < 10);
+    while (n < width) buf[n++] = ' ';   // right-align in `width` columns
+    while (n) lcdPutc(buf[--n]);
+}
+
+static void lcdTest(void) {
+    uint8_t addr = lcdInit();
+    if (!addr) {
+        // Nothing ACKed: check SDA/SCL wiring and 5 V power.
+        audioInit();
+        __enable_irq();
+        while (1) { audioTestTone(100); lcdDelayMs(1000); }
+    }
+
+    static const uint8_t heart[8] = {
+        0x00, 0x0A, 0x1F, 0x1F, 0x1F, 0x0E, 0x04, 0x00
+    };
+    lcdCreateChar(0, heart);
+
+    static const char hex[] = "0123456789ABCDEF";
+    lcdSetCursor(0, 0);
+    lcdPrint("LCD OK  I2C 0x");
+    lcdPutc(hex[addr >> 4]);
+    lcdPutc(hex[addr & 0xF]);
+
+    lcdSetCursor(0, 1);
+    lcdPrint("Laser Tag ");
+    lcdPutc(0);                          // custom heart
+
+    __enable_irq();
+    uint32_t last_s = 0xFFFFFFFF;
+    while (1) {
+        uint32_t s = ms_ticks / 1000;
+        if (s != last_s) {
+            last_s = s;
+            lcdSetCursor(11, 1);
+            lcdPrintUint(s % 10000, 4);  // columns 11-14
+            lcdPutc('s');
+        }
+    }
+}
+#endif
+
 int main(void) {
     configureFlash();
     configureClock();       // 80 MHz from PLL
     SysTick_Config(SystemCoreClock / 1000);
+
+#if LCD_TEST
+    lcdTest();              // never returns
+#endif
 
 #if !STANDALONE_TEST
     // The serial port belongs to the ESP8266: only web.c sends on it.
